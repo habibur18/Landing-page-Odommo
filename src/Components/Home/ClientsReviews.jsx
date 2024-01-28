@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 // import required modules
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 // import required modules
 export default function ClientsReviews() {
   const [slideCount, setSlideCount] = useState(3);
@@ -37,6 +37,7 @@ export default function ClientsReviews() {
           <Swiper
             slidesPerView={slideCount}
             spaceBetween={30}
+            // navigation={true}
             navigation={{
               nextEl: ".swiper-button-next",
               prevEl: ".swiper-button-prev",
@@ -46,11 +47,11 @@ export default function ClientsReviews() {
             }}
             loop={true}
             autoplay={{
-              delay: 1000000,
+              delay: 3000,
               // disableOnInteraction: true, // Stop autoplay on interaction
               pauseOnMouseEnter: true,
             }}
-            modules={[Pagination, Autoplay]}
+            modules={[Pagination, Autoplay, Navigation]}
             className="mySwiper"
           >
             {Array.from({ length: 4 }).map((_, index) => (
@@ -77,9 +78,11 @@ export default function ClientsReviews() {
                 </div>
               </SwiperSlide>
             ))}
+            {/* <div className="absolute top-10 right-28 gap-10 space-x-10">
+              <div className="swiper-button-prev">Prev</div>
+              <div className="swiper-button-next">Next</div>
+            </div> */}
           </Swiper>
-          <div className="swiper-button-next">Next</div>
-          <div className="swiper-button-prev">Prev</div>
         </div>
       </div>
     </section>

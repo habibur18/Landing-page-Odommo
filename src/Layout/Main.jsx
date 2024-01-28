@@ -5,6 +5,7 @@ import HeroSection from "../Components/Home/HeroSection";
 import SearchDomain from "../Components/Home/SearchDomain";
 import ServiceHighlights from "../Components/Home/ServiceHighlights";
 import Services from "../Components/Home/Services";
+import TeamMember from "../Components/Home/TeamMember";
 import Navbar from "../Components/Shared/Navbar";
 
 export default function Main() {
@@ -17,6 +18,7 @@ export default function Main() {
       <ServiceHighlights />
       <SearchDomain />
       <ClientsReviews />
+      <TeamMember />
     </div>
   );
 }
