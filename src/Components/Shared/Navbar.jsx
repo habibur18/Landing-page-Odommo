@@ -42,7 +42,7 @@ export default function Navbar() {
           <img src="https://i.postimg.cc/4yftydKN/nav-logo.png" alt="" />
         </div>
         <div>
-          <ul className="uppercase flex gap-5 font-medium">
+          <ul className="uppercase flex items-center gap-5 font-medium">
             {!isMediumDevice && (
               <>
                 <li className="py-2">
@@ -59,12 +59,44 @@ export default function Navbar() {
                         <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                       </svg>
                     </span>
-                    <ul className={`border py-3 bg-white rounded-sm transform transition-opacity duration-500 ease-in-out origin-top min-w-32 overflow-hidden ${isDropdownOpen ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0"} absolute top-10 -left-[35%]`} style={{ visibility: isDropdownOpen ? "visible" : "hidden" }}>
-                      <li className="rounded-sm px-5 py-3 hover:bg-gray-100">Programming</li>
-                      <li className="rounded-sm px-5 py-3 hover:bg-gray-100">DevOps</li>
-                      <li className="rounded-sm px-5 py-3 hover:bg-gray-100">Testing</li>
-                    </ul>
                   </NavLinkTracker>
+                  <ul onClick={(e) => e.stopPropagation()} className={`border rounded-lg shadow-[0_5px_15px_0_rgba(63,25,553,0.6)] bg-white  transform transition-opacity duration-500 ease-in-out origin-top min-w-64 text-center overflow-hidden ${isDropdownOpen ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0"} absolute top-10 -left-[80%]`} style={{ visibility: isDropdownOpen ? "visible" : "hidden" }}>
+                    <li className=" rounded-sm hover:bg-gray-100 uppercase">
+                      <Link onClick={() => window.scrollTo(0, 0)} className=" px-5 py-4 block" to="/services">
+                        All Services
+                      </Link>
+                    </li>
+                    <li className=" rounded-sm  hover:bg-gray-100">
+                      <Link onClick={() => window.scrollTo(0, 0)} className=" px-5 py-4 block" to="/services/uiux">
+                        UI/UX Design
+                      </Link>
+                    </li>
+                    <li className=" rounded-sm hover:bg-gray-100">
+                      <Link onClick={() => window.scrollTo(0, 0)} className=" px-5 py-4 block" to="/services/web-design">
+                        Web Design
+                      </Link>
+                    </li>
+                    <li className=" rounded-sm  hover:bg-gray-100">
+                      <Link onClick={() => window.scrollTo(0, 0)} className=" px-5 py-4 block" to="/services/web-development">
+                        WEB DEVELOPMENT
+                      </Link>
+                    </li>
+                    <li className=" rounded-sm  hover:bg-gray-100">
+                      <Link onClick={() => window.scrollTo(0, 0)} className=" px-5 py-4 block" to="/services/digital-marketing">
+                        DIGITAL MARKETING
+                      </Link>
+                    </li>
+                    <li className=" rounded-sm  hover:bg-gray-100">
+                      <Link className=" px-5 py-4 block " to="/services/graphics-design">
+                        GRAPHICS DESIGN
+                      </Link>
+                    </li>
+                    <li className=" rounded-sm px-5 py-4 hover:bg-gray-100">
+                      <Link className="px-5 py-5" to="/services/seo">
+                        SEO
+                      </Link>
+                    </li>
+                  </ul>
                 </li>
                 <li className="py-2">
                   <NavLinkTracker to="/blog">Blog</NavLinkTracker>
@@ -89,8 +121,8 @@ export default function Navbar() {
         {isMediumDevice && <i onClick={() => setIsMenuOpen(!isMenuOpen)} className={`fa-solid ${isMenuOpen ? "fa-xmark" : "fa-bars"} text-3xl p-px cursor-pointer`}></i>}
       </div>
       {isMediumDevice && (
-        <div className={`${isMenuOpen ? "translate-x-0" : "-translate-x-full"} transition-transform duration-300 fixed inset-0 bg-black bg-opacity-50 z-50`}>
-          <div ref={ref} className={`z-[200] bg-gray-900 text-white min-h-screen w-1/2 py-8`}>
+        <div className={`transition-opacity ease-in-out duration-300 ${isMenuOpen ? "fixed inset-0 bg-black bg-opacity-50 z-40" : "opacity-0 pointer-events-none"}`}>
+          <div ref={ref} className={`fixed inset-y-0 transform transition-transform ease-in-out duration-300 ${isMenuOpen ? "translate-x-0" : "-translate-x-full"} z-50 bg-gray-900 text-white min-h-screen w-1/2 py-8`}>
             <div className="flex justify-end px-4">
               <button onClick={() => setIsMenuOpen(false)} className="text-white focus:outline-none">
                 <svg className="h-6 w-6 cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
