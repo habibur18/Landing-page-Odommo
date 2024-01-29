@@ -30,7 +30,7 @@ export default function ClientsReviews() {
   }, []); // No need to include slideCount and setSlideCount in the dependency array
   return (
     <section className="my-32">
-      <div className="container mx-auto">
+      <div className="max-w-[1350px] px-10 2xl:px-0 mx-auto">
         <h1 className="text-4xl font-bold text-center my-10">What People Are Saying</h1>
 
         <div>

@@ -21,3 +21,11 @@
 .swiper-rtl .swiper-button-prev:after {
   content: "" !important;
 }
+
+/* PartnersMarquee.css */
+
+.custom-marquee {
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)) left, linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)) right;
+  background-size: 200px 100%, 200px 100%; /* Adjust the gradientWidth value as needed */
+  background-repeat: no-repeat;
+}
