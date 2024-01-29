@@ -5,6 +5,11 @@ import NavLinkTracker from "../../utils/NavLinkTracker";
 export default function Navbar() {
   const [isMediumDevice, setIsMediumDevice] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setDropdownOpen(!isDropdownOpen);
+  };
   const ref = createRef(null);
   useEffect(() => {
     const handleResize = () => {
@@ -33,38 +38,55 @@ export default function Navbar() {
   return (
     <nav>
       <div className="max-w-[1350px] mx-auto flex justify-between items-center p-5">
-        <div>
+        <div className={`${isMediumDevice ? "flex-grow" : ""}`}>
           <img src="https://i.postimg.cc/4yftydKN/nav-logo.png" alt="" />
         </div>
         <div>
           <ul className="uppercase flex gap-5 font-medium">
             {!isMediumDevice && (
               <>
-                <li>
+                <li className="py-2">
                   <NavLinkTracker to="/">Home</NavLinkTracker>
                 </li>
-                <li>
+                <li className="py-2">
                   <NavLinkTracker to="/about">About</NavLinkTracker>
                 </li>
-                <li>
-                  <NavLinkTracker to="/services">Services</NavLinkTracker>
+                <li onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown} className={`relative py-2 ${isDropdownOpen ? "z-[9999999]" : ""}`}>
+                  <NavLinkTracker to="/services">
+                    <span className="pr-1 font-semibold">Services</span>
+                    <span className="inline-block">
+                      <svg className={`fill-current h-4 w-4 transform ${isDropdownOpen ? "-rotate-180" : ""} transition duration-500 ease-in-out`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                      </svg>
+                    </span>
+                    <ul className={`border py-3 bg-white rounded-sm transform transition-opacity duration-500 ease-in-out origin-top min-w-32 overflow-hidden ${isDropdownOpen ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0"} absolute top-10 -left-[35%]`} style={{ visibility: isDropdownOpen ? "visible" : "hidden" }}>
+                      <li className="rounded-sm px-5 py-3 hover:bg-gray-100">Programming</li>
+                      <li className="rounded-sm px-5 py-3 hover:bg-gray-100">DevOps</li>
+                      <li className="rounded-sm px-5 py-3 hover:bg-gray-100">Testing</li>
+                    </ul>
+                  </NavLinkTracker>
                 </li>
-                <li>
+                <li className="py-2">
                   <NavLinkTracker to="/blog">Blog</NavLinkTracker>
                 </li>
-                <li>
+                <li className="py-2">
                   <NavLinkTracker to="/contact">Contact</NavLinkTracker>
+                </li>
+                <li>
+                  <Link onClick={() => window.scrollTo(0, 0)} to="/getstarted" className="group bg-[#0198FE] text-white px-3 py-3 sm:px-5 sm:py-4 rounded-[36px]">
+                    get started <span className="transform -rotate-45 inline-block translate-x-0 group-hover:translate-x-2 duration-300">→</span>
+                  </Link>
                 </li>
               </>
             )}
-            <li>
-              <Link onClick={() => window.scrollTo(0, 0)} to="/getstarted" className="group bg-[#0198FE] text-white px-3 py-3 sm:px-5 sm:py-4 rounded-[36px]">
-                get started <span className="transform -rotate-45 inline-block translate-x-0 group-hover:translate-x-2 duration-300">→</span>
-              </Link>
-            </li>
           </ul>
         </div>
-        {isMediumDevice && <i onClick={() => setIsMenuOpen(!isMenuOpen)} className={`fa-solid ${isMenuOpen ? "fa-xmark" : "fa-bars"} text-3xl p-px`}></i>}
+        {isMediumDevice && (
+          <Link onClick={() => window.scrollTo(0, 0)} to="/getstarted" className="group mr-2 sm:mr-5 bg-[#0198FE] text-white px-3 py-3 sm:px-5 sm:py-4 rounded-[36px]">
+            get started <span className="transform -rotate-45 inline-block translate-x-0 group-hover:translate-x-2 duration-300">→</span>
+          </Link>
+        )}
+        {isMediumDevice && <i onClick={() => setIsMenuOpen(!isMenuOpen)} className={`fa-solid ${isMenuOpen ? "fa-xmark" : "fa-bars"} text-3xl p-px cursor-pointer`}></i>}
       </div>
       {isMediumDevice && (
         <div className={`${isMenuOpen ? "translate-x-0" : "-translate-x-full"} transition-transform duration-300 fixed inset-0 bg-black bg-opacity-50 z-50`}>

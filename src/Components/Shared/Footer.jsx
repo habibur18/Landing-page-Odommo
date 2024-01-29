@@ -71,9 +71,7 @@ export default function Footer() {
         </div>
       </main>
       <div className="bg-[#0A1124]">
-        <p className="text-[#D4D4D4] max-w-[1350px] px-10 2xl:px-0 mx-auto py-3">
-          © {new Date().getFullYear()} © Copyright{new Date().getFullYear()} | Odommo XYZ
-        </p>
+        <p className="text-[#D4D4D4] max-w-[1350px] px-10 2xl:px-0 mx-auto py-3">© Copyright{new Date().getFullYear()} | Odommo XYZ</p>
       </div>
     </footer>
   );
