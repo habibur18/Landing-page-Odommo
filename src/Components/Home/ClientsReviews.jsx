@@ -57,7 +57,7 @@ export default function ClientsReviews() {
           >
             {Array.from({ length: 4 }).map((_, index) => (
               <SwiperSlide key={index}>
-                <div className="cursor-pointer shadow-md bg-[#CDCECF]/20 p-10 space-y-7">
+                <div style={{ boxShadow: "2px 4px 4px 4px rgba(173, 204, 255, 0.20)" }} className="cursor-pointer bg-[#CDCECF]/20 p-10 space-y-7 shadow-xl rounded-md">
                   <div>
                     <img src="https://i.ibb.co/bvWXWbn/comma.png" alt="" />
                   </div>
