@@ -53,6 +53,7 @@ export default function ClientsReviews() {
             }}
             modules={[Pagination, Autoplay, Navigation]}
             className="mySwiper"
+            // style={{ overflow: "visible" }}
           >
             {Array.from({ length: 4 }).map((_, index) => (
               <SwiperSlide key={index}>
@@ -78,10 +79,6 @@ export default function ClientsReviews() {
                 </div>
               </SwiperSlide>
             ))}
-            {/* <div className="absolute top-10 right-28 gap-10 space-x-10">
-              <div className="swiper-button-prev">Prev</div>
-              <div className="swiper-button-next">Next</div>
-            </div> */}
           </Swiper>
         </div>
       </div>

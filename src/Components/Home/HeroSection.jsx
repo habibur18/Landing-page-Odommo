@@ -4,8 +4,8 @@ import Line from "../../assets/Line49.svg";
 
 export default function HeroSection() {
   return (
-    <section className="bg-[#E8F6FF] my-5 py-32">
-      <div className=" max-w-[1350px] px-10  2xl:px-0  mx-auto flex md:flex-row flex-col justify-center gap-x-10 xl:gap-x-16">
+    <section className="bg-[#E8F6FF] py-[89px]">
+      <div className=" max-w-[1350px] px-10 lg:px-[98px]  2xl:px-0  mx-auto flex md:flex-row flex-col justify-center gap-x-10 xl:gap-x-16">
         <div className="relative w-full lg:w-2/4">
           <img className="w-full" src="https://i.ibb.co/KV2CXNv/hero-main.png" alt="" />
           <div className="absolute -top-10 -right-0 md:-right-10">
@@ -27,14 +27,14 @@ export default function HeroSection() {
               <img src={Line} alt="" />
             </div>
 
-            <div className="w-full [&>*]:flex [&>*]:items-center text-4xl">
-              <Link className="my-3flex justify-end w-full my-4" to="https://www.facebook.com/odommo/">
+            <div className="w-full [&>*]:flex [&>*]:items-center text-2xl">
+              <Link className="flex justify-end w-full my-4" to="https://www.facebook.com/odommo/">
                 <i className="fa-brands fa-facebook-f"></i>
               </Link>
-              <Link className="my-3flex justify-end w-full my-4" to="https://www.linkedin.com/company/odommo/">
+              <Link className="flex justify-end w-full my-4" to="https://www.linkedin.com/company/odommo/">
                 <i className="fa-brands fa-linkedin-in"></i>
               </Link>
-              <Link className="my-3flex justify-end w-full my-4" to="https://www.instagram.com/odommo/">
+              <Link className="flex justify-end w-full my-4" to="https://www.instagram.com/odommo/">
                 <i className="fa-brands fa-instagram"></i>
               </Link>
             </div>

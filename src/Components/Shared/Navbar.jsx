@@ -13,7 +13,7 @@ export default function Navbar() {
   const ref = createRef(null);
   useEffect(() => {
     const handleResize = () => {
-      setIsMediumDevice(window.innerWidth < 898);
+      setIsMediumDevice(window.innerWidth < 930);
       setIsMenuOpen(false);
     };
 
@@ -37,7 +37,7 @@ export default function Navbar() {
 
   return (
     <nav>
-      <div className="max-w-[1350px] mx-auto flex justify-between items-center p-5">
+      <div className="max-w-[1350px] mx-auto flex justify-between items-center px-[59px] 2xl:px-0">
         <div className={`${isMediumDevice ? "flex-grow" : ""}`}>
           <img src="https://i.postimg.cc/4yftydKN/nav-logo.png" alt="" />
         </div>

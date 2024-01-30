@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 
 export default function Services() {
   return (
-    <section className="my-10 bg-[#F5F5F5] py-20">
-      <div className="max-w-[1350px] px-10 2xl:px-0 mx-auto space-y-10">
+    <section className="my-10 bg-[#F5F5F5] ">
+      <div className="max-w-[1350px] py-[67px] px-10 lg:px-[172px]  md:px-10 2xl:px-0 mx-auto space-y-10">
         <div className="text-center mb-10">
           <h1 className="text-4xl font-bold">Our Best Services</h1>
         </div>
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="max-w-[540px] 2xl:max-w-full rounded-md space-y-5 text-center bg-[#fff] p-10">
+        <div className="grid md:grid-cols-2 gap-[49px]">
+          <div className="max-w-[540px] 2xl:max-w-full rounded-md space-y-5 text-center bg-[#fff] p-[25px]">
             <div className="w-full flex justify-center">
               <img className="w-[70px]" src="https://i.ibb.co/85yNXcZ/website-design.png" alt="" />
             </div>
@@ -19,7 +19,7 @@ export default function Services() {
               Learn More <span className="transform -rotate-45 inline-block translate-x-0 group-hover:translate-x-2 duration-300">→</span>
             </Link>
           </div>
-          <div className="max-w-[540px] 2xl:max-w-full rounded-md space-y-5 text-center bg-[#fff] p-10">
+          <div className="max-w-[540px] 2xl:max-w-full rounded-md space-y-5 text-center bg-[#fff] p-[25px]">
             <div className="w-full flex justify-center">
               <img className="w-[70px]" src="https://i.ibb.co/WH8bfxT/UI-UX.png" alt="" />
             </div>
@@ -29,7 +29,7 @@ export default function Services() {
               Learn More <span className="transform -rotate-45 inline-block translate-x-0 group-hover:translate-x-2 duration-300">→</span>
             </Link>
           </div>
-          <div className="max-w-[540px] 2xl:max-w-full rounded-md space-y-5 text-center bg-[#ffffff] p-10">
+          <div className="max-w-[540px] 2xl:max-w-full rounded-md space-y-5 text-center bg-[#ffffff] p-[25px]">
             <div className="w-full flex justify-center">
               <img className="w-[70px]" src="https://i.ibb.co/89VGWzc/digital-marketing.png" alt="" />
             </div>
@@ -39,7 +39,7 @@ export default function Services() {
               Learn More <span className="transform -rotate-45 inline-block translate-x-0 group-hover:translate-x-2 duration-300">→</span>
             </Link>
           </div>
-          <div className="max-w-[540px] 2xl:max-w-full rounded-md space-y-5 text-center bg-[#ffffff] p-10">
+          <div className="max-w-[540px] 2xl:max-w-full rounded-md space-y-5 text-center bg-[#ffffff] p-[25px]">
             <div className="w-full flex justify-center">
               <img className="w-[70px]" src="https://i.ibb.co/s2Qg2Zs/web-dev.png" alt="" />
             </div>
