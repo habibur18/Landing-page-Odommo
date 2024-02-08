@@ -13,7 +13,7 @@ export default function Navbar() {
   const ref = createRef(null);
   useEffect(() => {
     const handleResize = () => {
-      setIsMediumDevice(window.innerWidth < 930);
+      setIsMediumDevice(window.innerWidth < 940);
       setIsMenuOpen(false);
     };
 
@@ -36,8 +36,8 @@ export default function Navbar() {
   }, [isMenuOpen, ref]);
 
   return (
-    <nav>
-      <div className="max-w-[1350px] mx-auto flex justify-between items-center px-[59px] 2xl:px-0">
+    <nav className="fixed top-0 w-full z-50 bg-[#FFFFFF] border">
+      <div className="max-w-[1350px] mx-auto  flex justify-between items-center px-[59px] 2xl:px-0">
         <div className={`${isMediumDevice ? "flex-grow" : ""}`}>
           <img src="https://i.postimg.cc/4yftydKN/nav-logo.png" alt="" />
         </div>
@@ -60,7 +60,7 @@ export default function Navbar() {
                       </svg>
                     </span>
                   </NavLinkTracker>
-                  <ul onClick={(e) => e.stopPropagation()} className={`border rounded-lg shadow-[0_5px_15px_0_rgba(63,25,553,0.6)] bg-white  transform transition-opacity duration-500 ease-in-out origin-top min-w-64 text-center overflow-hidden ${isDropdownOpen ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0"} absolute top-10 -left-[80%]`} style={{ visibility: isDropdownOpen ? "visible" : "hidden" }}>
+                  <ul onClick={(e) => e.stopPropagation()} className={`border rounded-lg shadow-[0_5px_15px_0_rgba(63,25,553,0.6)] bg-white  transform transition-opacity duration-500 ease-in-out origin-top min-w-64 text-center overflow-hidden ${isDropdownOpen ? "opacity-100" : "opacity-0"} absolute duration-400 top-10 -left-[80%]`} style={{ visibility: isDropdownOpen ? "visible" : "hidden" }}>
                     <li className=" rounded-sm hover:bg-gray-100 uppercase">
                       <Link onClick={() => window.scrollTo(0, 0)} className=" px-5 py-4 block" to="/services">
                         All Services
@@ -105,8 +105,13 @@ export default function Navbar() {
                   <NavLinkTracker to="/contact">Contact</NavLinkTracker>
                 </li>
                 <li>
-                  <Link onClick={() => window.scrollTo(0, 0)} to="/getstarted" className="group bg-[#0198FE] text-white px-3 py-3 sm:px-5 sm:py-4 rounded-[36px]">
-                    get started <span className="transform -rotate-45 inline-block translate-x-0 group-hover:translate-x-2 duration-300">→</span>
+                  <Link onClick={() => window.scrollTo(0, 0)} to="/getstarted" className="group bg-[#0198FE] text-white px-3 py-3 sm:px-5 sm:py-4 rounded-[36px] flex justify-center gap-2 hover:bg-white hover:text-[#0198FE] hover:ring-2 hover:ring-[#0198FE] duration-300 group">
+                    get started{" "}
+                    <span className="transform  inline-block translate-x-0 group-hover:translate-x-2 duration-300">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none" className="stroke-current">
+                        <path d="M7.5 17.5L17.5 7.5M17.5 7.5H7.5M17.5 7.5V17.5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </span>
                   </Link>
                 </li>
               </>
@@ -114,8 +119,13 @@ export default function Navbar() {
           </ul>
         </div>
         {isMediumDevice && (
-          <Link onClick={() => window.scrollTo(0, 0)} to="/getstarted" className="group mr-2 sm:mr-5 bg-[#0198FE] text-white px-3 py-3 sm:px-5 sm:py-4 rounded-[36px]">
-            get started <span className="transform -rotate-45 inline-block translate-x-0 group-hover:translate-x-2 duration-300">→</span>
+          <Link onClick={() => window.scrollTo(0, 0)} to="/getstarted" className="group mr-2 sm:mr-5 bg-[#0198FE] text-white px-3 py-3 sm:px-5 sm:py-4 rounded-[36px] flex justify-center gap-2">
+            get started{" "}
+            <span className="transform inline-block translate-x-0 group-hover:translate-x-2 duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                <path d="M7.5 17.5L17.5 7.5M17.5 7.5H7.5M17.5 7.5V17.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </span>
           </Link>
         )}
         {isMediumDevice && <i onClick={() => setIsMenuOpen(!isMenuOpen)} className={`fa-solid ${isMenuOpen ? "fa-xmark" : "fa-bars"} text-3xl p-px cursor-pointer`}></i>}
