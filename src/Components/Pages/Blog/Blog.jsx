@@ -10,7 +10,7 @@ const Blog = () => {
       <div>
         <figure className="relative">
           <img className="min-w-[100vw] object-cover max-h-[60vh]  filter brightness-[0.6]" src="https://i.postimg.cc/Y9T9bzgX/contactus.png" alt="" />
-          <h3 className="text-white absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-5xl z-30">Contact</h3>
+          <h3 className="text-white absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-5xl z-30">Blog</h3>
         </figure>
       </div>
       <main className="max-w-[1350px] px-10 2xl:px-0 mx-auto">

@@ -87,12 +87,12 @@ export default function Navbar() {
                       </Link>
                     </li>
                     <li className=" rounded-sm  hover:bg-gray-100">
-                      <Link className=" px-5 py-4 block " to="/services/graphics-design">
+                      <Link onClick={() => window.scrollTo(0, 0)} className=" px-5 py-4 block " to="/services/graphics-design">
                         GRAPHICS DESIGN
                       </Link>
                     </li>
                     <li className=" rounded-sm px-5 py-4 hover:bg-gray-100">
-                      <Link className="px-5 py-5" to="/services/seo">
+                      <Link onClick={() => window.scrollTo(0, 0)} className="px-5 py-5" to="/services/seo">
                         SEO
                       </Link>
                     </li>
