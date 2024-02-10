@@ -18,7 +18,7 @@ const router = createBrowserRouter([
         element: <Contact />,
       },
       {
-        path: "/a",
+        path: "/terms-and-conditions",
         element: <TermsAndConditions />,
       },
     ],
