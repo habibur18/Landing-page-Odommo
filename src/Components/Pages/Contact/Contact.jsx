@@ -6,7 +6,7 @@ const Contact = () => {
     <section className="pt-[75px]">
       <div className="bg-['https://i.ibb.co/fXPxfKb/contactus.png']">
         <figure className="relative">
-          <img className="w-full max-h-[60vh]  filter brightness-[0.6]" src="https://i.postimg.cc/Y9T9bzgX/contactus.png" alt="" />
+          <img className="min-w-[100vw] object-cover max-h-[60vh]  filter brightness-[0.6]" src="https://i.postimg.cc/Y9T9bzgX/contactus.png" alt="" />
           <h3 className="text-white absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-5xl z-30">Contact</h3>
         </figure>
       </div>
@@ -73,13 +73,13 @@ const Contact = () => {
             <div>
               <label htmlFor="agree" className="block">
                 <input type="checkbox" id="agree" />
-                <span className="ml-2">I agree to the</span>
+                <span className="ml-2">I agree to the</span>{" "}
                 <Link to="#" id="terms-and-conditions" className="underline text-[#0198FE]">
                   terms and conditions
                 </Link>
               </label>
 
-              <button className="w-48 bg-[#0198FE] text-white w-full px-3 py-3 sm:px-5 my-5 mx-5 sm:py-4 rounded-[36px] flex justify-center gap-2" type="submit">
+              <button className="w-48 bg-[#0198FE] text-white px-3 py-3 sm:px-5 my-5 mx-5 sm:py-4 rounded-[36px] flex justify-center gap-2" type="submit">
                 Submit
               </button>
             </div>

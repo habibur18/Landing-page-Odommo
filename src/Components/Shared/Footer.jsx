@@ -64,7 +64,7 @@ export default function Footer() {
           ))}
           <div className="my-5">
             <h2 className="text-[#F5F5F5] text-lg font-semibold">NEWSLETTER</h2>
-            <input className="bg-[#262626] px-3 py-1 rounded-md" type="email" name="" id="" />
+            <input className="bg-[#262626] text-white/60 px-3 py-1 rounded-md focus:placeholder:text-transparent" type="email" name="" id="" placeholder="example@example.com" />
             <br />
             <button className="bg-[#3B82F6] text-[#FFFFFF] px-4 my-2 py-1 rounded-3xl">Submit</button>
           </div>

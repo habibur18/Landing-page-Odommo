@@ -4,6 +4,7 @@ import ClientsReviews from "./ClientsReviews";
 import HeroSection from "./HeroSection";
 import PartnerWithUs from "./PartnerWithUs";
 import PartnersMarquee from "./PartnersMarquee";
+import Portfolio from "./Portfolio/Portfolio";
 import RecentBlog from "./RecentBlog";
 import SearchDomain from "./SearchDomain";
 import ServiceHighlights from "./ServiceHighlights";
@@ -19,6 +20,7 @@ export default function Home() {
       <ServiceHighlights />
       <SearchDomain />
       <ClientsReviews />
+      <Portfolio />
       <TeamMember />
       <PartnerWithUs />
       <RecentBlog />

@@ -119,11 +119,11 @@ export default function Navbar() {
           </ul>
         </div>
         {isMediumDevice && (
-          <Link onClick={() => window.scrollTo(0, 0)} to="/getstarted" className="group mr-2 sm:mr-5 bg-[#0198FE] text-white px-3 py-3 sm:px-5 sm:py-4 rounded-[36px] flex justify-center gap-2">
+          <Link onClick={() => window.scrollTo(0, 0)} to="/getstarted" className="group bg-[#0198FE] text-white px-3 py-3 sm:px-5 sm:py-4 rounded-[36px] flex justify-center gap-2 hover:bg-white hover:text-[#0198FE] hover:ring-2 hover:ring-[#0198FE] duration-300 group">
             get started{" "}
-            <span className="transform inline-block translate-x-0 group-hover:translate-x-2 duration-300">
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
-                <path d="M7.5 17.5L17.5 7.5M17.5 7.5H7.5M17.5 7.5V17.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            <span className="transform  inline-block translate-x-0 group-hover:translate-x-2 duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none" className="stroke-current">
+                <path d="M7.5 17.5L17.5 7.5M17.5 7.5H7.5M17.5 7.5V17.5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </span>
           </Link>
