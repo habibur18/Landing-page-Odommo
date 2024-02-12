@@ -11,7 +11,8 @@ const Portfolio = () => {
 
   // ee1aafed03e789a85a2b800eba2360ac
   const getFechPopularMovies = async () => {
-    const response = await fetch("https://api.themoviedb.org/3/movie/popular?api_key=ee1aafed03e789a85a2b800eba2360ac&language=en-US&page=1");
+    // const response = await fetch("https://api.themoviedb.org/3/movie/popular?api_key=ee1aafed03e789a85a2b800eba2360ac&language=en-US&page=1");
+    const response = await fetch("/portfolio.json");
     const data = await response.json();
     setPopularMovies(data.results);
     setFilteredMovies(data.results);
