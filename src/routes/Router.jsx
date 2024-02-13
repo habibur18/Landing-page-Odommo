@@ -1,10 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
 import AdminLogin from "../App/Admin/LoginSignup/AdminLogin";
 import AdminSignup from "../App/Admin/LoginSignup/AdminSignup";
+import AboutUs from "../App/Pages/AboutUs/AboutUs";
 import Blog from "../App/Pages/Blog/Blog";
 import SingleBlog from "../App/Pages/Blog/SingleBlog/SingleBlog";
 import Contact from "../App/Pages/Contact/Contact";
 import Home from "../App/Pages/Home/Home";
+import NotFoundPage from "../App/Pages/NotFoundPage/NotFoundPage";
 import PrivacyAndPolicy from "../App/Pages/PrivacyPolicy/PrivacyAndPolicy";
 import Services from "../App/Pages/Services/Services";
 import TermsAndConditions from "../App/Pages/TermsAndCondition/TermsAndConditions";
@@ -18,6 +20,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Home /> },
       { path: "contact-us", element: <Contact /> },
+      { path: "about-us", element: <AboutUs /> },
       { path: "terms-and-conditions", element: <TermsAndConditions /> },
       { path: "privacy-and-policy", element: <PrivacyAndPolicy /> },
       { path: "blog", element: <Blog /> },
@@ -33,6 +36,10 @@ const router = createBrowserRouter([
       { path: "admin-login", element: <AdminLogin /> },
       { path: "admin-signup", element: <AdminSignup /> },
     ],
+  },
+  {
+    path: "*",
+    element: <NotFoundPage />,
   },
 ]);
 export default router;

@@ -52,22 +52,22 @@ const AdminSignup = () => {
           <h1 className="mb-8 text-3xl text-center">Admin Sign up</h1>
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-3">
             <div>
-              <input {...register("fullname")} type="text" className="block border border-grey-light w-full p-3 rounded" name="fullname" placeholder="Full Name" />
+              <input {...register("fullname")} type="text" className="block border border-grey-light w-full p-3 rounded outline-none focus:ring-2 focus:ring-[#0198FE]" name="fullname" placeholder="Full Name" />
               {errors.fullname && <p className="text-red-500">{errors.fullname.message}</p>}
             </div>
 
             <div>
-              <input {...register("email")} type="email" className="block border border-grey-light w-full p-3 rounded" name="email" placeholder="Email" />
+              <input {...register("email")} type="email" className="block border border-grey-light w-full p-3 rounded outline-none focus:ring-2 focus:ring-[#0198FE]" name="email" placeholder="Email" />
               {errors.email && <p className="text-red-500">{errors.email.message}</p>}
             </div>
 
             <div>
-              <input {...register("password")} type="password" className="block border border-grey-light w-full p-3 rounded" name="password" placeholder="Password" />
+              <input {...register("password")} type="password" className="block border border-grey-light w-full p-3 rounded outline-none focus:ring-2 focus:ring-[#0198FE]" name="password" placeholder="Password" />
               {errors.password && <p className="text-red-500">{errors.password.message}</p>}
             </div>
 
             <div>
-              <input {...register("confirmPassword")} type="password" className="block border border-grey-light w-full p-3 rounded mb-4" name="confirmPassword" placeholder="Confirm Password" />
+              <input {...register("confirmPassword")} type="password" className="block border border-grey-light w-full p-3 rounded mb-4 outline-none focus:ring-2 focus:ring-[#0198FE]" name="confirmPassword" placeholder="Confirm Password" />
 
               {errors.confirmPassword && <p className="text-red-500">{errors.confirmPassword.message}</p>}
             </div>

@@ -49,7 +49,7 @@ export default function Navbar() {
                   <NavLinkTracker to="/">Home</NavLinkTracker>
                 </li>
                 <li className="py-2">
-                  <NavLinkTracker to="/about">About</NavLinkTracker>
+                  <NavLinkTracker to="/about-us">About</NavLinkTracker>
                 </li>
                 <li onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown} className={`relative py-2 ${isDropdownOpen ? "z-[9999999]" : ""}`}>
                   <NavLinkTracker to="/services">
@@ -128,7 +128,7 @@ export default function Navbar() {
             </span>
           </Link>
         )}
-        {isMediumDevice && <i onClick={() => setIsMenuOpen(!isMenuOpen)} className={`fa-solid ${isMenuOpen ? "fa-xmark" : "fa-bars"} text-3xl p-px cursor-pointer `}></i>}
+        {isMediumDevice && <i onClick={() => setIsMenuOpen(!isMenuOpen)} className={`fa-solid ${isMenuOpen ? "fa-xmark" : "fa-bars"} mr-3 md:mr-0 text-3xl p-px cursor-pointer `}></i>}
       </div>
       {isMediumDevice && (
         <div className={`transition-opacity ease-in-out duration-300 ${isMenuOpen ? "fixed inset-0 bg-black bg-opacity-50 z-40" : "opacity-0 pointer-events-none"}`}>
@@ -145,7 +145,7 @@ export default function Navbar() {
                 <NavLinkTracker to="/">Home</NavLinkTracker>
               </li>
               <li>
-                <NavLinkTracker to="/about">About</NavLinkTracker>
+                <NavLinkTracker to="/about-us">About</NavLinkTracker>
               </li>
               <li>
                 <NavLinkTracker to="/services">Services</NavLinkTracker>
