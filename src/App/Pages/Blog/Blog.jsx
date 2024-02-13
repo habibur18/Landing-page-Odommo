@@ -15,7 +15,7 @@ const Blog = () => {
           <h1 className="text-4xl font-bold">Our Latest Blogs</h1>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5 md:gap-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5 md:gap-16 md:gap-y-20">
           {Array.from({ length: 6 }).map((_, index) => (
             <article key={index} className="space-y-5 max-w-[624px] mx-auto">
               <figure>
