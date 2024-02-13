@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function ServiceTile({ title, button }) {
   return (
     <section className="my-10 bg-[#F5F5F5] ">
-      <div className={`max-w-[1350px] ${title ? "py-[67px]" : "py-[173px]"}  px-10 lg:px-[172px]  md:px-10 2xl:px-0 mx-auto space-y-10`}>
+      <div className={`max-w-[1350px] ${title ? "py-[67px]" : "py-[53px]"}  px-10 lg:px-[172px]  md:px-10 2xl:px-0 mx-auto space-y-10`}>
         {title && (
           <div className="text-center mb-10">
             <h1 className="text-4xl font-bold">{title}</h1>
