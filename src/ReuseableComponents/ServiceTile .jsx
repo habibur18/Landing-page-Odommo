@@ -11,7 +11,7 @@ export default function ServiceTile({ title, button }) {
           </div>
         )}
         <div className="grid md:grid-cols-2 gap-[49px]">
-          <div className="max-w-[540px] 2xl:max-w-full rounded-md space-y-5 text-center bg-[#fff] p-[25px]">
+          <div className="max-w-[540px] 2xl:max-w-full rounded-md space-y-5 text-center bg-[#fff] p-[25px] shadow-lg">
             <div className="w-full flex justify-center">
               <img className="w-[70px]" src="https://i.ibb.co/85yNXcZ/website-design.png" alt="" />
             </div>
@@ -21,7 +21,7 @@ export default function ServiceTile({ title, button }) {
               Learn More <span className="transform -rotate-45 inline-block translate-x-0 group-hover:translate-x-2 duration-300">→</span>
             </Link>
           </div>
-          <div className="max-w-[540px] 2xl:max-w-full rounded-md space-y-5 text-center bg-[#fff] p-[25px]">
+          <div className="max-w-[540px] 2xl:max-w-full rounded-md space-y-5 text-center bg-[#fff] p-[25px] shadow-lg">
             <div className="w-full flex justify-center">
               <img className="w-[70px]" src="https://i.ibb.co/WH8bfxT/UI-UX.png" alt="" />
             </div>
@@ -31,7 +31,7 @@ export default function ServiceTile({ title, button }) {
               Learn More <span className="transform -rotate-45 inline-block translate-x-0 group-hover:translate-x-2 duration-300">→</span>
             </Link>
           </div>
-          <div className="max-w-[540px] 2xl:max-w-full rounded-md space-y-5 text-center bg-[#ffffff] p-[25px]">
+          <div className="max-w-[540px] 2xl:max-w-full rounded-md space-y-5 text-center bg-[#ffffff] p-[25px] shadow-lg">
             <div className="w-full flex justify-center">
               <img className="w-[70px]" src="https://i.ibb.co/89VGWzc/digital-marketing.png" alt="" />
             </div>
@@ -41,7 +41,7 @@ export default function ServiceTile({ title, button }) {
               Learn More <span className="transform -rotate-45 inline-block translate-x-0 group-hover:translate-x-2 duration-300">→</span>
             </Link>
           </div>
-          <div className="max-w-[540px] 2xl:max-w-full rounded-md space-y-5 text-center bg-[#ffffff] p-[25px]">
+          <div className="max-w-[540px] 2xl:max-w-full rounded-md space-y-5 text-center bg-[#ffffff] p-[25px] shadow-lg">
             <div className="w-full flex justify-center">
               <img className="w-[70px]" src="https://i.ibb.co/s2Qg2Zs/web-dev.png" alt="" />
             </div>
