@@ -3,9 +3,9 @@ import React from "react";
 const BlogDetails = () => {
   return (
     <div className="w-full p-4">
-      {/* <figure className="mb-10">
+      <figure className="mb-10">
         <img className=" w-full object-contain" src="https://images.unsplash.com/photo-1506157786151-b8491531f063" alt="Blog Featured Image" />
-      </figure> */}
+      </figure>
       <div className="prose max-w-none">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed sit amet feugiat eros, eget eleifend dolor. Proin maximus bibendum felis, id fermentum odio vestibulum id. Sed ac ligula eget dolor consequat tincidunt. Nullam fringilla ipsum et ex lacinia, at bibendum elit posuere. Aliquam eget leo nec nibh mollis consectetur.</p>
         <p>Suspendisse potenti. Mauris euismod, magna sit amet aliquam dapibus, ex sapien porta nisl, vel auctor orci velit in risus. Fusce gravida bibendum dui, id volutpat felis dignissim a. Duis sagittis, arcu ac convallis bibendum, neque dolor suscipit dolor, non malesuada magna orci a mauris. Proin sollicitudin diam eu enim tincidunt dapibus. Aliquam pharetra purus mauris, id lacinia mi malesuada ut. Integer dignissim, urna nec scelerisque feugiat, lacus sapien tincidunt sem, sed luctus enim libero vel nunc. Vivamus ornare, felis quis feugiat luctus, orci justo auctor urna, et elementum orci dolor ac ante. Ut varius sapien nec fringilla sodales. Suspendisse lacinia, metus eu suscipit lobortis, enim sapien commodo sapien, non facilisis urna elit eget elit.</p>

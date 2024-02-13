@@ -17,12 +17,6 @@ const SingleBlog = () => {
         </div>
         <article className="max-w-[1650px] mx-auto px-4 sm:px-10 2xl:px-10">
           <div className=" py-8">
-            <figure className="mb-10 relative border" style={{ height: "60vh" }}>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <img className="w-full h-full max-w-full max-h-full object-cover rounded-md" src="https://images.pexels.com/photos/3774243/pexels-photo-3774243.jpeg?cs=srgb&dl=pexels-james-wheeler-3774243.jpg&fm=jpg" alt="Blog Featured Image" />
-              </div>
-            </figure>
-
             <div className=" flex flex-col md:flex-row gap-5">
               <BlogDetails />
               <BlogLeftSide />
