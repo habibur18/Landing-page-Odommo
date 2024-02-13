@@ -23,7 +23,7 @@ const Blog = () => {
               </figure>
               <h3 className="text-2xl font-bold">Regional Manager & Limited time management.</h3>
               <p>{totalChar > 306 ? desc.slice(0, 306).replace(/\s+$/, "") + "..." : desc}</p>
-              <Link className="block bg-[#0198FE] text-white px-3 py-3 sm:px-5 sm:py-4 rounded-[36px] max-w-[176px] text-center mt-8" onClick={() => window.scrollTo(0, 0)} to={`/blogDetails`}>
+              <Link className="block bg-[#0198FE] text-white px-3 py-3 sm:px-5 sm:py-2 rounded-[36px] max-w-[176px] text-center mt-8" onClick={() => window.scrollTo(0, 0)} to={`/blogDetails`}>
                 Read More
               </Link>
             </article>
