@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ServiceHighlights() {
+export default function ServiceHighlightsSection() {
   return (
     <section>
       <div className="max-w-[1350px] pt-[88px] px-10 lg:px-[92px] 2xl:px-0 mx-auto">

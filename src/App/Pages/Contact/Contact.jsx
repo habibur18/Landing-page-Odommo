@@ -74,8 +74,12 @@ const Contact = () => {
               <label htmlFor="agree" className="block">
                 <input type="checkbox" id="agree" />
                 <span className="ml-2">I agree to the</span>{" "}
-                <Link to="#" id="terms-and-conditions" className="underline text-[#0198FE]">
+                <Link onClick={() => window.scrollTo(0, 0)} to="/terms-and-conditions" id="terms-and-conditions" className="underline text-[#0198FE]">
                   terms and conditions
+                </Link>{" "}
+                <span>and</span>{" "}
+                <Link onClick={() => window.scrollTo(0, 0)} to="/privacy-and-policy" id="privacy-policy" className="underline text-[#0198FE]">
+                  privacy policy
                 </Link>
               </label>
 

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import PageTitle from "../../../ReuseableComponents/PageTitle";
 
 const Blog = () => {
   const desc = "During the month of February, the American Dental Association celebrates National Children’s Dental Health Month. This month-long national health observance reinforces the importance of oral health in children as well as helping parents with tips to keep their child’s smile on track! At Children’s Dental hostpital";
@@ -7,12 +8,7 @@ const Blog = () => {
   const totalChar = desc.length;
   return (
     <div className="pt-[75px]">
-      <div>
-        <figure className="relative">
-          <img className="min-w-[100vw] object-cover max-h-[60vh]  filter brightness-[0.6]" src="https://i.postimg.cc/Y9T9bzgX/contactus.png" alt="" />
-          <h3 className="text-white absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-5xl z-30">Blog</h3>
-        </figure>
-      </div>
+      <PageTitle title="Blog" src="https://i.postimg.cc/Y9T9bzgX/contactus.png" />
       <main className="max-w-[1350px] px-10 2xl:px-0 mx-auto">
         <div className="text-center my-20">
           <h6 className="font-semibold text-[#6B9B7B]">Blogs</h6>

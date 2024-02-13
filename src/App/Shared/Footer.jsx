@@ -16,7 +16,7 @@ const navigationData = [
     items: [
       { name: "About us", path: "/about-us" },
       { name: "Contact us", path: "/contact-us" },
-      { name: "Jobs", path: "/jobs" },
+      { name: "Careers", path: "/careers" },
       { name: "Press kit", path: "/press-kit" },
     ],
   },

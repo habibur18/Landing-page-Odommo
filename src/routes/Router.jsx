@@ -1,36 +1,37 @@
 import { createBrowserRouter } from "react-router-dom";
-import Blog from "../Components/Pages/Blog/Blog";
-import Contact from "../Components/Pages/Contact/Contact";
-import Home from "../Components/Pages/Home/Home";
-import PrivacyAndPolicy from "../Components/Pages/PrivacyPolicy/PrivacyAndPolicy";
-import TermsAndConditions from "../Components/Pages/TermsAndCondition/TermsAndConditions";
-import Main from "../Layout/Main";
+import AdminLogin from "../App/Admin/LoginSignup/AdminLogin";
+import AdminSignup from "../App/Admin/LoginSignup/AdminSignup";
+import Blog from "../App/Pages/Blog/Blog";
+import SingleBlog from "../App/Pages/Blog/SingleBlog/SingleBlog";
+import Contact from "../App/Pages/Contact/Contact";
+import Home from "../App/Pages/Home/Home";
+import PrivacyAndPolicy from "../App/Pages/PrivacyPolicy/PrivacyAndPolicy";
+import Services from "../App/Pages/Services/Services";
+import TermsAndConditions from "../App/Pages/TermsAndCondition/TermsAndConditions";
+import AdminLayout from "../Layout/AdminLayout";
+import MainLayout from "../Layout/MainLayout";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Main />,
+    element: <MainLayout />,
     children: [
-      {
-        index: true,
-        element: <Home />,
-      },
-      {
-        path: "/contact",
-        element: <Contact />,
-      },
-      {
-        path: "/terms-and-conditions",
-        element: <TermsAndConditions />,
-      },
-      {
-        path: "/privacy-and-policy",
-        element: <PrivacyAndPolicy />,
-      },
-      {
-        path: "/blog",
-        element: <Blog />,
-      },
+      { index: true, element: <Home /> },
+      { path: "contact-us", element: <Contact /> },
+      { path: "terms-and-conditions", element: <TermsAndConditions /> },
+      { path: "privacy-and-policy", element: <PrivacyAndPolicy /> },
+      { path: "blog", element: <Blog /> },
+      { path: "blog/:id", element: <SingleBlog /> },
+      { path: "services", element: <Services /> },
+    ],
+  },
+
+  {
+    path: "/admin",
+    element: <AdminLayout />,
+    children: [
+      { path: "admin-login", element: <AdminLogin /> },
+      { path: "admin-signup", element: <AdminSignup /> },
     ],
   },
 ]);

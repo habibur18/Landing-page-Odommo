@@ -1,9 +1,9 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import Footer from "../Components/Shared/Footer";
-import Navbar from "../Components/Shared/Navbar";
+import Footer from "../App/Shared/Footer";
+import Navbar from "../App/Shared/Navbar";
 
-export default function Main() {
+export default function MainLayout() {
   return (
     <div>
       <Navbar />
