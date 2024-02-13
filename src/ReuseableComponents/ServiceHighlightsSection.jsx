@@ -6,7 +6,7 @@ export default function ServiceHighlightsSection() {
       <div className="max-w-[1350px] pt-[88px] px-10 lg:px-[92px] 2xl:px-0 mx-auto">
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-24">
           <div className="w-3/4">
-            <h2 className="max-w-[300px] text-4xl font-semibold ">
+            <h2 className="max-w-[300px] text-4xl font-bold ">
               WHY CHOOSE <span className="text-[#3B82F6]">ODOMMO XYZ</span>{" "}
             </h2>
           </div>
