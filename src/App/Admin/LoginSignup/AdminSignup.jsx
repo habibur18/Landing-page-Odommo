@@ -4,17 +4,26 @@ import { useForm } from "react-hook-form";
 import { FaArrowCircleLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { z } from "zod";
-const SignUpSchema = z.object({
-  fullname: z
-    .string()
-    .min(6, "Name must be at least 6 characters long")
-    .refine((value) => /^[a-zA-Z\s]+$/.test(value), {
-      message: "Name must contain only letters and spaces",
-    }),
-  email: z.string().email().min(12, "Email must be at least 12 characters long"),
-  password: z.string().min(8, "Password must be at least 8 characters long"),
-});
-
+const SignUpSchema = z
+  .object({
+    fullname: z
+      .string()
+      .min(6, "Name must be at least 6 characters long")
+      .refine((value) => /^[a-zA-Z\s]+$/.test(value), {
+        message: "Name must contain only letters and spaces",
+      }),
+    email: z.string().email().min(12, "Email must be at least 12 characters long"),
+    password: z.string().min(8, "Password must be at least 8 characters long"),
+    confirmPassword: z.string().min(8, "Password must be at least 8 characters long"),
+  })
+  .superRefine(({ confirmPassword, password }, ctx) => {
+    if (confirmPassword !== password) {
+      ctx.addIssue({
+        code: "custom",
+        message: "The passwords did not match",
+      });
+    }
+  });
 const AdminSignup = () => {
   const {
     register,
@@ -54,7 +63,8 @@ const AdminSignup = () => {
             </div>
 
             <div>
-              <input {...register("confirm_password")} type="password" className="block border border-grey-light w-full p-3 rounded mb-4" name="confirm_password" placeholder="Confirm Password" />
+              <input {...register("confirmPassword")} type="text" className="block border border-grey-light w-full p-3 rounded mb-4" name="confirmPassword" placeholder="Confirm Password" />
+              {errors.confirmPassword && <p className="text-red-500">{errors.confirmPassword.message}</p>}
             </div>
             <input type="submit" value="Create Account" className="cursor-pointer w-full text-center py-3 rounded text-white bg-green-600 my-1" />
           </form>
