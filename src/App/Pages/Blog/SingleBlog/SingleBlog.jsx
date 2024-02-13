@@ -1,5 +1,6 @@
 import React from "react";
 
+import PageTitle from "../../../../ReuseableComponents/PageTitle";
 import BlogDetails from "./BlogDetails";
 import BlogLeftSide from "./BlogLeftSide";
 import MoreBlog from "./MoreBlog";
@@ -8,6 +9,7 @@ import ShareSocial from "./ShareSocial";
 const SingleBlog = () => {
   return (
     <div className="flex flex-col mt-32">
+      <PageTitle title="Blog Details" src="https://i.postimg.cc/2y2tT5kK/blog.png" />
       <main className="flex flex-col justify-center">
         <div className="bg-gray-100 py-8">
           <div className="container mx-auto px-4 lg:px-10 2xl:px-0">
