@@ -53,7 +53,7 @@ export default function Footer() {
         <div className="flex justify-between flex-wrap my-10">
           {navigationData.map((categoryObj) => (
             <div key={categoryObj.category} className="my-5">
-              <h2 className="text-[#F5F5F5] text-xl font-medium mb-3">{categoryObj.category}</h2>
+              <h2 className="text-[#F5F5F5] text-xl font-medium mb-5 uppercase">{categoryObj.category}</h2>
               <ul className="text-[#A3A3A3] capitalize">
                 {categoryObj.items.map((item) => (
                   <li key={item.name}>
@@ -64,8 +64,8 @@ export default function Footer() {
             </div>
           ))}
           <div className="my-5">
-            <h2 className="text-[#F5F5F5] text-sm font-semibold mb-3">NEWSLETTER</h2>
-            <input className="bg-[#262626] text-white/60 px-3 py-4 mb-3 rounded-md focus:placeholder:text-transparent" type="email" name="" id="" placeholder="Enter your email" />
+            <h2 className="text-[#F5F5F5] text-sm font-semibold mb-5">NEWSLETTER</h2>
+            <input className="bg-[#262626] text-white/60 px-3 py-2 mb-5 rounded-md focus:placeholder:text-transparent" type="email" name="" id="" placeholder="Enter your email" />
             <br />
             <button className="bg-[#3B82F6] text-[#FFFFFF] px-[29px] my-2 py-[9px] rounded-3xl">Submit</button>
           </div>

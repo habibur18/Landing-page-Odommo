@@ -60,7 +60,7 @@ export default function Navbar() {
                       </svg>
                     </span>
                   </NavLinkTracker>
-                  <ul onClick={(e) => e.stopPropagation()} className={`border rounded-lg shadow-[0_5px_15px_0_rgba(63,25,553,0.6)] bg-white  transform transition-opacity duration-500 ease-in-out origin-top min-w-64 text-center overflow-hidden ${isDropdownOpen ? "opacity-100" : "opacity-0"} absolute duration-400 top-10 -left-[80%]`} style={{ visibility: isDropdownOpen ? "visible" : "hidden" }}>
+                  <ul onClick={(e) => e.stopPropagation()} className={`border rounded-lg shadow-[0_5px_15px_0_rgba(0,0,0,0.6)] bg-white  transform transition-opacity duration-500 ease-in-out origin-top min-w-64 text-center overflow-hidden ${isDropdownOpen ? "opacity-100" : "opacity-0"} absolute duration-400 top-10 -left-[80%]`} style={{ visibility: isDropdownOpen ? "visible" : "hidden" }}>
                     <li className=" rounded-sm hover:bg-gray-100 uppercase">
                       <Link onClick={() => window.scrollTo(0, 0)} className=" px-5 py-4 block" to="/services">
                         All Services
