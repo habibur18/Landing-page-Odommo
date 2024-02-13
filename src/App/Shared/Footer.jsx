@@ -37,15 +37,15 @@ export default function Footer() {
           <figure className="self-start">
             <img src="https://i.postimg.cc/7L7bKfYK/logo.png" alt="odommo xyz logo" />
           </figure>
-          <div className="text-[#FFFFFF] text-3xl flex gap-3">
+          <div className="text-[#FFFFFF] text-2xl flex gap-3">
             <Link to="https://www.facebook.com/odommo.xyz">
-              <i className="fa-brands fa-facebook-f border w-12 h-12 flex justify-center items-center mx-auto text-center rounded-full"></i>
+              <i className="fa-brands fa-facebook-f border w-10 h-10 flex justify-center items-center mx-auto text-center rounded-full"></i>
             </Link>
             <Link to="https://www.instagram.com/odommo.xyz">
-              <i className="fa-brands fa-instagram border w-12 h-12 flex justify-center items-center mx-auto text-center rounded-full"></i>
+              <i className="fa-brands fa-instagram border w-10 h-10 flex justify-center items-center mx-auto text-center rounded-full"></i>
             </Link>
             <Link to="https://twitter.com/OdommoXyz">
-              <i className="fa-brands fa-linkedin-in border w-12 h-12 flex justify-center items-center mx-auto text-center rounded-full"></i>
+              <i className="fa-brands fa-linkedin-in border w-10 h-10 flex justify-center items-center mx-auto text-center rounded-full"></i>
             </Link>
           </div>
         </div>
