@@ -30,10 +30,10 @@ export default function ClientsReviews() {
   }, []); // No need to include slideCount and setSlideCount in the dependency array
   return (
     <section className="my-32">
-      <div className="max-w-[1350px] px-10 lg:px-[80px] 2xl:px-0 mx-auto">
+      <div className="max-w-[1350px] px-10 lg:px-[80px] 2xl:px-0 mx-auto overflow-hidden">
         <h1 className="text-4xl font-bold text-center my-10">What People Are Saying</h1>
 
-        <div>
+        <div className="">
           <Swiper
             slidesPerView={slideCount}
             spaceBetween={30}
@@ -53,11 +53,11 @@ export default function ClientsReviews() {
             }}
             modules={[Pagination, Autoplay, Navigation]}
             className="mySwiper"
-            // style={{ overflow: "visible" }}
+            style={{ overflow: "visible", minHeight: "450px" }}
           >
             {Array.from({ length: 4 }).map((_, index) => (
               <SwiperSlide key={index}>
-                <div style={{ boxShadow: "2px 4px 4px 4px rgba(173, 204, 255, 0.20)" }} className="cursor-pointer bg-[#CDCECF]/20 p-10 space-y-7 shadow-xl rounded-md">
+                <div style={{ boxShadow: "-2px 4px 13px -1px rgba(0,0,0,0.5)" }} className="cursor-pointer bg-[#CDCECF]/20 p-10 space-y-7 shadow-lg rounded-md mt-5">
                   <div>
                     <img src="https://i.ibb.co/bvWXWbn/comma.png" alt="" />
                   </div>

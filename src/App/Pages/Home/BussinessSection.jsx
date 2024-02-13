@@ -10,7 +10,7 @@ export default function BussinessSection() {
           <p className="text-justify">Welcome to Odommo XYZ! A growing digital agency founded in 2020. We are a specialized web development, Android app development, graphics design, business solutions, digital marketing, UI/UX designing, and data analysis service provider in Bangladesh. Our team of experts is dedicated to helping your businesses establish a strong online presence and achieve your growth goals. With our use of the latest technologies and knowledge of recent business trends,</p>
           <p>We believe in the power of technology and innovation to drive business success. With years of experience in the industry, our team of skilled professionals is committed to delivering high-quality services that exceed our client`s expectations. We understand that each business</p>
           <div className="my-10">
-            <Link onClick={() => window.scrollTo(0, 0)} to="/#" className="group bg-[#0198FE] text-white px-8  py-4 rounded-[36px] font-medium">
+            <Link onClick={() => window.scrollTo(0, 0)} to="/#" className="group bg-[#0198FE] hover:bg-[#0198FE]/80 duration-300 text-white px-8  py-4 rounded-[36px] font-medium">
               Read More
             </Link>
           </div>
