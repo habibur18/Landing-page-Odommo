@@ -40,23 +40,23 @@ const Contact = () => {
             <div className="grid grid-cols-12 gap-5 [&>label>p]:py-2">
               <label htmlFor="firstName" className="col-span-6">
                 <p className="capitalize font-semibold">First Name</p>
-                <input className="border-[2px] border-black rounded p-3 w-full" type="text" name="firstName" id="firstName" />
+                <input className="border-[2px] border-black/25 rounded p-3 w-full" type="text" name="firstName" id="firstName" />
               </label>
               <label htmlFor="lastName" className="col-span-6">
                 <p className="capitalize font-semibold">last Name</p>
-                <input className="border-[2px] border-black rounded p-3 w-full" type="text" name="lastName" id="lastName" />
+                <input className="border-[2px] border-black/25 rounded p-3 w-full" type="text" name="lastName" id="lastName" />
               </label>
               <label htmlFor="email" className="col-span-6">
                 <p className="capitalize font-semibold">Email</p>
-                <input className="border-[2px] border-black rounded p-3 w-full" type="text" name="email" id="email" />
+                <input className="border-[2px] border-black/25 rounded p-3 w-full" type="text" name="email" id="email" />
               </label>
               <label htmlFor="phone" className="col-span-6">
                 <p className="capitalize font-semibold">Phone</p>
-                <input className="border-[2px] border-black rounded p-3 w-full" type="tel" name="phone" id="phone" />
+                <input className="border-[2px] border-black/25 rounded p-3 w-full" type="tel" name="phone" id="phone" />
               </label>
               <label htmlFor="service" className="col-span-12">
                 <p className="capitalize font-semibold">Chose service</p>
-                <select name="service" id="" className="uppercase border-[2px] border-black rounded p-3 w-full">
+                <select name="service" id="" className="uppercase border-[2px] border-black/25 rounded p-3 w-full">
                   <option value="service1">Ui/ux design</option>
                   <option value="service2">web design</option>
                   <option value="service3">web development</option>
@@ -67,7 +67,7 @@ const Contact = () => {
               </label>
               <label htmlFor="message" className="col-span-12">
                 <p className="capitalize font-semibold">Message</p>
-                <textarea className="border-[2px] border-black rounded p-3 w-full" name="message" id="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+                <textarea className="border-[2px] border-black/25 rounded p-3 w-full" name="message" id="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
               </label>
             </div>
             <div>
