@@ -10,7 +10,7 @@ export default function ServiceTile({ title, button }) {
             <h1 className="text-4xl font-bold">{title}</h1>
           </div>
         )}
-        <div className="grid md:grid-cols-2 gap-[49px]">
+        <div className="grid md:grid-cols-2 gap-[49px] text-justify">
           <div className="max-w-[540px] 2xl:max-w-full rounded-md space-y-5 text-center bg-[#fff] p-[25px] shadow-lg">
             <div className="w-full flex justify-center">
               <img className="w-[70px]" src="https://i.ibb.co/85yNXcZ/website-design.png" alt="" />
