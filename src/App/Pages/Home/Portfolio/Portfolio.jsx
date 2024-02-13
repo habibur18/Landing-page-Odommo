@@ -24,7 +24,7 @@ const Portfolio = () => {
   return (
     <PortfolioContext.Provider value={{ popularMovies, filteredMovies, setFilteredMovies }}>
       <div className="max-w-[1650px] px-10 lg:px-[80px] 2xl:px-20 mx-auto pt-[72px] my-20 ">
-        <div className="space-y-10  flex lg:flex-row flex-col gap-10 lg:gap-40 ">
+        <div className="space-y-10  flex lg:flex-row flex-col items-center gap-10 lg:gap-40 ">
           <h2 className="text-4xl font-bold max-w-[10ch]">Explore Our Recent Works</h2>
           <p className="max-w-[60ch] ">We value the experimentation, the reformation of the message, and the smart incentives. We offer a variety of services and solutions Worldwide and this is at the heart of how we approach our.</p>
         </div>
