@@ -21,8 +21,8 @@ const Blog = () => {
               <figure>
                 <img src="https://i.ibb.co/nkWp8gZ/Image.png" className="rounded-lg" alt="" />
               </figure>
-              <h3 className="text-[28px] font-bold">Regional Manager & Limited time management.</h3>
-              <p>{totalChar > 306 ? desc.slice(0, 306).replace(/\s+$/, "") + "..." : desc}</p>
+              <h3 className="text-[28px] font-bold leading-7">Regional Manager & Limited time management.</h3>
+              <p className="text-justify">{totalChar > 306 ? desc.slice(0, 306).replace(/\s+$/, "") + "..." : desc}</p>
               <Link className="block bg-[#0198FE] text-white px-3 py-3 sm:px-5 sm:py-2 rounded-[36px] max-w-[176px] text-center mt-8" onClick={() => window.scrollTo(0, 0)} to={`/blogDetails`}>
                 Read More
               </Link>
