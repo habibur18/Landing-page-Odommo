@@ -64,7 +64,8 @@ const AdminSignup = () => {
             </div>
 
             <div>
-              <input {...register("confirmPassword")} type="text" className="block border border-grey-light w-full p-3 rounded mb-4" name="confirmPassword" placeholder="Confirm Password" />
+              <input {...register("confirmPassword")} type="password" className="block border border-grey-light w-full p-3 rounded mb-4" name="confirmPassword" placeholder="Confirm Password" />
+
               {errors.confirmPassword && <p className="text-red-500">{errors.confirmPassword.message}</p>}
             </div>
             <input type="submit" value="Create Account" className="cursor-pointer w-full text-center py-3 rounded text-white bg-green-600 my-1" />
