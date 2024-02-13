@@ -105,7 +105,7 @@ export default function Navbar() {
                   <NavLinkTracker to="/contact-us">Contact</NavLinkTracker>
                 </li>
                 <li>
-                  <Link onClick={() => window.scrollTo(0, 0)} to="/getstarted" className="group bg-[#0198FE] text-white px-3 py-3 sm:px-5 sm:py-4 rounded-[36px] flex justify-center gap-2 hover:bg-white hover:text-[#0198FE] hover:ring-2 hover:ring-[#0198FE] duration-300 group shadow-lg">
+                  <Link onClick={() => window.scrollTo(0, 0)} to="/contact-us" className="group bg-[#0198FE] text-white px-3 py-3 sm:px-5 sm:py-4 rounded-[36px] flex justify-center gap-2 hover:bg-white hover:text-[#0198FE] hover:ring-2 hover:ring-[#0198FE] duration-300 group shadow-lg">
                     get started{" "}
                     <span className="transform  inline-block translate-x-0 group-hover:translate-x-2 duration-300">
                       <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none" className="stroke-current">
@@ -119,7 +119,7 @@ export default function Navbar() {
           </ul>
         </div>
         {isMediumDevice && (
-          <Link onClick={() => window.scrollTo(0, 0)} to="/getstarted" className="group bg-[#0198FE] text-white px-2  py-4  sm:px-5 sm:py-4 rounded-md sm:rounded-[36px] flex justify-center gap-2 hover:bg-white hover:text-[#0198FE] hover:ring-2 hover:ring-[#0198FE] duration-300 group mx-3">
+          <Link onClick={() => window.scrollTo(0, 0)} to="/contact-us" className="group bg-[#0198FE] text-white px-2  py-4  sm:px-5 sm:py-4 rounded-md sm:rounded-[36px] flex justify-center gap-2 hover:bg-white hover:text-[#0198FE] hover:ring-2 hover:ring-[#0198FE] duration-300 group mx-3">
             get started{" "}
             <span className="transform hidden sm:block  translate-x-0 group-hover:translate-x-2 duration-300">
               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none" className="stroke-current">
