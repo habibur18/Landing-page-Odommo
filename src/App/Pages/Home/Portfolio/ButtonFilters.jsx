@@ -38,7 +38,10 @@ const ButtonFilters = () => {
   return (
     <div className="text-center my-10">
       {genres.map((genre) => (
-        <button key={genre.id} className={` ${tabActive === genre.id ? "bg-[#3B82F6] text-white" : "bg-gray-300"} font-semibold px-5 py-3 rounded-full mx-2 my-3`} onClick={() => handleFilter(genre.id)}>
+        // <button key={genre.id} className={` ${tabActive === genre.id ? "bg-[#3B82F6] text-white" : "bg-gray-300"} font-semibold px-5 py-3 rounded-full mx-2 my-3`} onClick={() => handleFilter(genre.id)}>
+        //   {genre.name}
+        // </button>
+        <button key={genre.id} className={`hover:underline underline-offset-4 duration-300 font-semibold px-5 py-3 rounded-full mx-2 my-3`} onClick={() => handleFilter(genre.id)}>
           {genre.name}
         </button>
       ))}
