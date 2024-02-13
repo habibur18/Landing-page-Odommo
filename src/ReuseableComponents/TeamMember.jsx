@@ -90,11 +90,11 @@ export default function TeamMember() {
             ))}
           </Swiper>
           <div style={{ zIndex: 100 }} className="absolute -top-10 right-28 flex flex-row-reverse">
-            <button style={{ color: "red", backgroundColor: "#FFF" }} className="swiper-button-prev  px-8 py-5">
-              <i className="fa-solid fa-arrow-left flex border h-full w-full justify-center items-center"></i>
-            </button>
             <button style={{ color: "white", backgroundColor: "#0198FE", zIndex: 200 }} className="swiper-button-next  px-8 py-5">
               <i className="fa-solid fa-arrow-right flex border h-full w-full justify-center items-center "></i>
+            </button>
+            <button style={{ color: "#3B82F6", backgroundColor: "#FFFFFF" }} className="swiper-button-prev  px-8 py-5">
+              <i className="fa-solid fa-arrow-left flex border h-full w-full justify-center items-center"></i>
             </button>
           </div>
         </div>

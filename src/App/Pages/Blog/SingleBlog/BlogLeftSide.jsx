@@ -9,7 +9,7 @@ const BlogLeftSide = () => {
       {/* search bar */}
       <div className="relative">
         <input className="w-full text-[#737373] border-2 border-[#737373]/50 px-[24px] py-[13px] rounded-[36px] shadow-md outline-none focus:ring-2 focus:ring-[#0198FE] duration-300" type="search" placeholder="Search here..." />
-        <button className="absolute right-0 top-1/2 -translate-y-1/2 px-[24px] py-[11 px] bg-[#0198FE] text-white rounded-[36px] w-[80px] text-center text-2xl">
+        <button className="absolute right-0 top-1/2 -translate-y-1/2 px-[24px] py-[12px] bg-[#0198FE] text-white rounded-[36px] w-[80px] text-center text-2xl">
           <i className="fa-solid fa-magnifying-glass"></i>
         </button>
       </div>

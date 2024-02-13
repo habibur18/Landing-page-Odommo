@@ -36,7 +36,7 @@ export default function Navbar() {
   }, [isMenuOpen, ref]);
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-[#FFFFFF] shadow-lg">
+    <nav className="fixed top-0 w-full z-[999] bg-[#FFFFFF] shadow-lg">
       <div className="max-w-[1350px] mx-auto  flex justify-between items-center px-1 sm:px-5 md:px-[50px] 2xl:px-0">
         <div className={`${isMediumDevice ? "flex-grow" : ""}`}>
           <img src="https://i.postimg.cc/4yftydKN/nav-logo.png" alt="" />

@@ -1,15 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import PageTitle from "../../../ReuseableComponents/PageTitle";
 
 const Contact = () => {
   return (
     <section className="pt-[75px]">
-      <div>
-        <figure className="relative">
-          <img className="min-w-[100vw] object-cover max-h-[60vh]  filter brightness-[0.6]" src="https://i.postimg.cc/Y9T9bzgX/contactus.png" alt="" />
-          <h3 className="text-white absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-5xl z-30">Contact</h3>
-        </figure>
-      </div>
+      <PageTitle title="Contact Us" src="https://i.postimg.cc/Y9T9bzgX/contactus.png" />
       <main className="max-w-[1350px] px-10 2xl:px-0 mx-auto">
         <div className="my-[84px] flex md:flex-row flex-col gap-10 ">
           <div className="flex-[0.6]">
@@ -56,7 +52,7 @@ const Contact = () => {
               </label>
               <label htmlFor="service" className="col-span-12">
                 <p className="capitalize font-semibold">Chose service</p>
-                <select name="service" id="" className="uppercase border-[2px] border-black/25 rounded p-3 w-full">
+                <select name="service" id="" className="uppercase border-[2px] border-black/25 rounded outline-none p-3 w-full">
                   <option value="service1">Ui/ux design</option>
                   <option value="service2">web design</option>
                   <option value="service3">web development</option>

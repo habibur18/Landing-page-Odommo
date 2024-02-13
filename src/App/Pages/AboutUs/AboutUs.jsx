@@ -8,7 +8,7 @@ import PartnerWithUs from "../Home/PartnerWithUs";
 
 const AboutUs = () => {
   return (
-    <div className="mt-24">
+    <div className="mt-20">
       <PageTitle title="About Us" src="https://i.postimg.cc/Y9T9bzgX/contactus.png" />
       <section className="max-w-[1350px] px-10 lg:px-[100px] 2xl:px-0 mx-auto">
         <SectionWithImage

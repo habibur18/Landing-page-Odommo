@@ -17,7 +17,7 @@ export default function HeroSection() {
             Elevate Your Business With <span className="bg-gray-300 bg-opacity-14 border-4 border-[#0198FE] px-3 rounded-md inline-block text-[#0198FE]">IT</span>
             Solutions{" "}
           </h1>
-          <Link onClick={() => window.scrollTo(0, 0)} to="/contact-us" className="group max-w-[250px] bg-[#0198FE] text-white px-2 py-3 sm:px-5 sm:py-4 rounded-[36px] flex justify-center gap-2 hover:bg-white hover:text-[#0198FE] hover:ring-2 hover:ring-[#0198FE] duration-300 group uppercase font-semibold">
+          <Link onClick={() => window.scrollTo(0, 0)} to="/contact-us" className="group max-w-[250px] bg-[#0198FE] text-white px-2 py-3 sm:px-5 sm:py-4 rounded-[36px] flex justify-center gap-2 hover:bg-white hover:text-[#0198FE] hover:ring-2 hover:ring-[#0198FE] duration-300 group uppercase font-semibold shadow-lg">
             get started now
             <span className="transform  inline-block translate-x-0 group-hover:translate-x-2 duration-300">
               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none" className="stroke-current">

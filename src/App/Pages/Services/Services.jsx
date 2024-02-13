@@ -7,7 +7,7 @@ import PartnerWithUs from "../Home/PartnerWithUs";
 
 const Services = () => {
   return (
-    <div>
+    <div className="mt-20">
       <PageTitle title="Services" src="https://i.postimg.cc/Y9T9bzgX/contactus.png" />
       <main>
         <div className="max-w-[1350px] px-10 lg:px-[100px] 2xl:px-0 mx-auto my-24">
