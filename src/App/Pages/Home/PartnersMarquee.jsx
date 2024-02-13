@@ -9,10 +9,10 @@ export default function PartnersMarquee() {
         <article>
           <Marquee gradient={false} speed={50} play={true} pauseOnHover={true} direction="left" gradientWidth={200}>
             <figure className="px-5 w-full">
-              <img className="w-full h-[70px]" src="https://i.ibb.co/pw9VVTV/acquia.png" alt="" />
+              <img className="w-full h-[70px]" src="https://i.postimg.cc/L8J2C4Fg/acquia.png" alt="" />
             </figure>
             <figure className="px-5 w-full">
-              <img className="w-full h-[70px]" src="https://i.ibb.co/GPjz7DZ/albion.png" alt="" />
+              <img className="w-full h-[70px]" src="https://i.postimg.cc/L8J2C4Fg/acquia.png" alt="" />
             </figure>
             <figure className="px-5 w-full">
               <img className="w-full h-[70px]" src="https://i.ibb.co/W0FKppj/aws.png" alt="" />
@@ -28,10 +28,10 @@ export default function PartnersMarquee() {
             </figure>
             {/* 2nd */}
             <figure className="px-5 w-full">
-              <img className="w-full h-[70px]" src="https://i.ibb.co/pw9VVTV/acquia.png" alt="" />
+              <img className="w-full h-[70px]" src="https://i.postimg.cc/L8J2C4Fg/acquia.png" alt="" />
             </figure>
             <figure className="px-5 w-full">
-              <img className="w-full h-[70px]" src="https://i.ibb.co/GPjz7DZ/albion.png" alt="" />
+              <img className="w-full h-[70px]" src="https://i.postimg.cc/L8J2C4Fg/acquia.png" alt="" />
             </figure>
             <figure className="px-5 w-full">
               <img className="w-full h-[70px]" src="https://i.ibb.co/W0FKppj/aws.png" alt="" />
