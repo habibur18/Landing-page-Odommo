@@ -8,42 +8,36 @@ export default function PartnersMarquee() {
         <h1 className="text-4xl font-bold text-center my-[44px]">Our Partners</h1>
         <article>
           <Marquee gradient={false} speed={50} play={true} pauseOnHover={true} direction="left" gradientWidth={200}>
-            <figure className="px-5 w-full">
+            <figure className="px-10 w-full">
+              <img className="w-full h-[70px]" src="https://i.postimg.cc/RFd0rPsW/wpengine.png" alt="" />
+            </figure>
+            <figure className="px-10 w-full">
               <img className="w-full h-[70px]" src="https://i.postimg.cc/L8J2C4Fg/acquia.png" alt="" />
             </figure>
-            <figure className="px-5 w-full">
-              <img className="w-full h-[70px]" src="https://i.postimg.cc/L8J2C4Fg/acquia.png" alt="" />
+            <figure className="px-10 w-full">
+              <img className="w-full h-[70px]" src="https://i.postimg.cc/v8SQWxpw/aws.png" alt="" />
             </figure>
-            <figure className="px-5 w-full">
-              <img className="w-full h-[70px]" src="https://i.ibb.co/W0FKppj/aws.png" alt="" />
+            <figure className="px-10 w-full">
+              <img className="w-full h-[70px]" src="https://i.postimg.cc/7Yky11mc/albion.png " alt="" />
             </figure>
-            <figure className="px-5 w-full">
-              <img className="w-full h-[70px]" src="https://i.ibb.co/HpWxS5p/ict.png" alt="" />
-            </figure>
-            <figure className="px-5 w-full">
-              <img className="w-full h-[70px]" src="https://i.ibb.co/W0FKppj/aws.png" alt="" />
-            </figure>
-            <figure className="px-5 w-full">
-              <img className="w-full h-[70px]" src="https://i.ibb.co/58cdW7c/wpengine.png" alt="" />
+            <figure className="px-10 w-full">
+              <img className="w-full h-[70px]" src="https://i.postimg.cc/ncc3tCzr/ict.png" alt="" />
             </figure>
             {/* 2nd */}
-            <figure className="px-5 w-full">
+            <figure className="px-10 w-full">
+              <img className="w-full h-[70px]" src="https://i.postimg.cc/RFd0rPsW/wpengine.png" alt="" />
+            </figure>
+            <figure className="px-10 w-full">
               <img className="w-full h-[70px]" src="https://i.postimg.cc/L8J2C4Fg/acquia.png" alt="" />
             </figure>
-            <figure className="px-5 w-full">
-              <img className="w-full h-[70px]" src="https://i.postimg.cc/L8J2C4Fg/acquia.png" alt="" />
+            <figure className="px-10 w-full">
+              <img className="w-full h-[70px]" src="https://i.postimg.cc/v8SQWxpw/aws.png" alt="" />
             </figure>
-            <figure className="px-5 w-full">
-              <img className="w-full h-[70px]" src="https://i.ibb.co/W0FKppj/aws.png" alt="" />
+            <figure className="px-10 w-full">
+              <img className="w-full h-[70px]" src="https://i.postimg.cc/7Yky11mc/albion.png " alt="" />
             </figure>
-            <figure className="px-5 w-full">
-              <img className="w-full h-[70px]" src="https://i.ibb.co/HpWxS5p/ict.png" alt="" />
-            </figure>
-            <figure className="px-5 w-full">
-              <img className="w-full h-[70px]" src="https://i.ibb.co/W0FKppj/aws.png" alt="" />
-            </figure>
-            <figure className="px-5 w-full">
-              <img className="w-full h-[70px]" src="https://i.ibb.co/58cdW7c/wpengine.png" alt="" />
+            <figure className="px-10 w-full">
+              <img className="w-full h-[70px]" src="https://i.postimg.cc/ncc3tCzr/ict.png" alt="" />
             </figure>
           </Marquee>
         </article>
