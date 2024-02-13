@@ -45,7 +45,7 @@ export default function Footer() {
               <i className="fa-brands fa-instagram border w-12 h-12 flex justify-center items-center mx-auto text-center rounded-full"></i>
             </Link>
             <Link to="https://twitter.com/OdommoXyz">
-              <i className="fa-brands fa-x-twitter border w-12 h-12 flex justify-center items-center mx-auto text-center rounded-full"></i>
+              <i className="fa-brands fa-linkedin-in border w-12 h-12 flex justify-center items-center mx-auto text-center rounded-full"></i>
             </Link>
           </div>
         </div>
