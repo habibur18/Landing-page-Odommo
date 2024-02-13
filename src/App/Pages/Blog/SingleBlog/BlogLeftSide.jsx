@@ -6,6 +6,13 @@ const BlogLeftSide = () => {
   const title = "Publish your passions, your way - Create a unique and beautiful blog easily.";
   return (
     <div className="space-y-5 w-full h-full xl:w-[calc(100%-340px)] px-4 sticky top-0 xl:flex-[0_0_340px] md:max-w-[300px] lg:max-w-full">
+      {/* search bar */}
+      <div className="relative">
+        <input className="w-full text-[#737373] border-2 border-[#737373]/50 px-[24px] py-[13px] rounded-[36px] shadow-md outline-none focus:ring-2 focus:ring-[#0198FE] duration-300" type="search" placeholder="Search here..." />
+        <button className="absolute right-0 top-1/2 -translate-y-1/2 px-[24px] py-[11 px] bg-[#0198FE] text-white rounded-[36px] w-[80px] text-center text-2xl">
+          <i className="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
       {/* categories */}
       <div className="border-2 border-[#737373]/50 p-4 mt-4 rounded-[36px] shadow-md">
         <h2 className="text-[32px] font-semibold text-gray-800 mb-4">Categories</h2>

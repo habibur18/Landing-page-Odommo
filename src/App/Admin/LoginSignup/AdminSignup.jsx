@@ -41,14 +41,14 @@ const AdminSignup = () => {
   };
   return (
     <div className="bg-grey-lighter min-h-[90vh] flex flex-col">
-      <Link to="/" className="text-xl font-bold flex justify-center items-center gap-2 w-full mt-5">
-        <span>
-          <FaArrowCircleLeft />
-        </span>
-        <span>Navigate To Home Page</span>
-      </Link>
       <div className="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
         <div className="bg-white px-6 py-8 rounded shadow-md text-black w-full">
+          <Link to="/" className="text-xl font-bold flex justify-center items-center gap-2 w-full my-5 ">
+            <span>
+              <FaArrowCircleLeft />
+            </span>
+            <span>Navigate To Home Page</span>
+          </Link>
           <h1 className="mb-8 text-3xl text-center">Admin Sign up</h1>
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-3">
             <div>
