@@ -49,7 +49,7 @@ export default function Footer() {
             </Link>
           </div>
         </div>
-        <hr />
+        <div className="bg-[#FFFFFF]/20 w-full h-1"></div>
         <div className="flex justify-between flex-wrap my-10">
           {navigationData.map((categoryObj) => (
             <div key={categoryObj.category} className="my-5">
