@@ -5,7 +5,7 @@ import Line from "../../../assets/Line49.svg";
 export default function HeroSection() {
   return (
     <section className="bg-[#E8F6FF] py-[150px]  md:py-[200px]">
-      <div className=" max-w-[1350px] px-10 lg:px-[98px]  2xl:px-0  mx-auto flex md:flex-row flex-col justify-center gap-x-10 xl:gap-x-16">
+      <div className=" max-w-[1350px] px-10 lg:px-[98px]  2xl:px-0  mx-auto flex md:flex-row items-center flex-col justify-center gap-x-10 xl:gap-x-16">
         <div className="relative w-full lg:w-2/4">
           <img className="w-full" src="https://i.ibb.co/KV2CXNv/hero-main.png" alt="" />
           <div className="absolute -top-10 -right-0 md:-right-10">
