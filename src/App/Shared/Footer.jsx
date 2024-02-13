@@ -54,7 +54,7 @@ export default function Footer() {
           {navigationData.map((categoryObj) => (
             <div key={categoryObj.category} className="my-5">
               <h2 className="text-[#F5F5F5] text-xl font-medium mb-3">{categoryObj.category}</h2>
-              <ul className="text-[#A3A3A3]">
+              <ul className="text-[#A3A3A3] capitalize">
                 {categoryObj.items.map((item) => (
                   <li key={item.name}>
                     <Link to={item.path}>{item.name}</Link>
@@ -64,10 +64,10 @@ export default function Footer() {
             </div>
           ))}
           <div className="my-5">
-            <h2 className="text-[#F5F5F5] text-lg font-semibold">NEWSLETTER</h2>
-            <input className="bg-[#262626] text-white/60 px-3 py-1 rounded-md focus:placeholder:text-transparent" type="email" name="" id="" placeholder="example@example.com" />
+            <h2 className="text-[#F5F5F5] text-lg font-semibold mb-3">NEWSLETTER</h2>
+            <input className="bg-[#262626] text-white/60 px-3 py-2 mb-3 rounded-md focus:placeholder:text-transparent" type="email" name="" id="" placeholder="example@example.com" />
             <br />
-            <button className="bg-[#3B82F6] text-[#FFFFFF] px-8 my-2 py-3 rounded-3xl">Submit</button>
+            <button className="bg-[#3B82F6] text-[#FFFFFF] px-[29px] my-2 py-[9px] rounded-3xl">Submit</button>
           </div>
         </div>
       </main>
