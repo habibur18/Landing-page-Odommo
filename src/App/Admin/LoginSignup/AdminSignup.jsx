@@ -21,6 +21,7 @@ const SignUpSchema = z
       ctx.addIssue({
         code: "custom",
         message: "The passwords did not match",
+        path: ["confirmPassword"],
       });
     }
   });
@@ -34,7 +35,9 @@ const AdminSignup = () => {
   });
   const onSubmit = (data) => {
     console.log("data");
-    console.log(data);
+    // console.log(data);
+    const { fullname, email, password } = data;
+    console.log(fullname, email, password);
   };
   return (
     <div className="bg-grey-lighter min-h-[90vh] flex flex-col">
