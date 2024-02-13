@@ -23,13 +23,13 @@ const Portfolio = () => {
   // console.log(popularMovies);
   return (
     <PortfolioContext.Provider value={{ popularMovies, filteredMovies, setFilteredMovies }}>
-      <div className="max-w-[1650px] px-10 lg:px-[80px] 2xl:px-0 mx-auto pt-[72px]">
+      <div className="max-w-[1650px] px-10 lg:px-[80px] 2xl:px-20 mx-auto pt-[72px] ">
         <div className="flex flex-col gap-5 md:flex-row">
-          <h2 className="text-4xl font-semibold flex-[0.5]">Explore Our Recent Works</h2>
+          <h2 className="text-4xl font-bold flex-[0.5]">Explore Our Recent Works</h2>
           <p className="flex-[0.5] mt-10">We value the experimentation, the reformation of the message, and the smart incentives. We offer a variety of services and solutions Worldwide and this is at the heart of how we approach our.</p>
         </div>
         <ButtonFilters />
-        <div className="grid grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 gap-10">
+        <div className="grid grid-cols-2 md:grid-cols-3 2xl:grid-cols-3  gap-10">
           <AnimatePresence>
             <PortfolioItems />
           </AnimatePresence>
