@@ -1,14 +1,14 @@
 import React from "react";
-
 import PageTitle from "../../../../ReuseableComponents/PageTitle";
 import line from "../../../../assets/Line50.svg";
 import PartnerWithUs from "../../Home/PartnerWithUs";
-import BlogDetails from "./BlogDetails";
-import BlogLeftSide from "./BlogLeftSide";
-const SingleBlog = () => {
+import ServiceDetailsMain from "./ServiceDetailsMain";
+import SingleServiceLeft from "./SingleServiceLeft";
+
+const SingleService = () => {
   return (
     <div className="flex flex-col">
-      <PageTitle title=" A Beginner's Guide to Making Money Online Through" src="https://i.postimg.cc/Y9T9bzgX/contactus.png" breadcrumb="Home / Blog / Single Blog" />
+      <PageTitle title="UI/UX Design" src="https://i.postimg.cc/Y9T9bzgX/contactus.png" breadcrumb="Home / Services / Single Service" />
       <main className="flex flex-col justify-center">
         <article className="max-w-[1650px] mx-auto px-4 sm:px-10 2xl:px-10">
           <div className=" py-8">
@@ -19,9 +19,9 @@ const SingleBlog = () => {
             </figure>
 
             <div className=" flex flex-col md:flex-row gap-5">
-              <BlogDetails />
+              <ServiceDetailsMain />
               <img src={line} className="h-full mt-8 w-[2px] hidden md:block" alt="" />
-              <BlogLeftSide />
+              <SingleServiceLeft />
             </div>
             {/* share social media */}
           </div>
@@ -32,4 +32,4 @@ const SingleBlog = () => {
   );
 };
 
-export default SingleBlog;
+export default SingleService;

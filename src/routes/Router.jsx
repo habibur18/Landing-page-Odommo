@@ -9,6 +9,7 @@ import Home from "../App/Pages/Home/Home";
 import NotFoundPage from "../App/Pages/NotFoundPage/NotFoundPage";
 import PrivacyAndPolicy from "../App/Pages/PrivacyPolicy/PrivacyAndPolicy";
 import Services from "../App/Pages/Services/Services";
+import SingleService from "../App/Pages/Services/SingleService/SingleService";
 import TermsAndConditions from "../App/Pages/TermsAndCondition/TermsAndConditions";
 import AdminLayout from "../Layout/AdminLayout";
 import MainLayout from "../Layout/MainLayout";
@@ -26,6 +27,7 @@ const router = createBrowserRouter([
       { path: "blog", element: <Blog /> },
       { path: "blog/:id", element: <SingleBlog /> },
       { path: "services", element: <Services /> },
+      { path: "services/:id", element: <SingleService /> },
     ],
   },
 
