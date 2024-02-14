@@ -8,7 +8,7 @@ const Blog = () => {
   const totalChar = desc.length;
   return (
     <div className="pt-[75px]">
-      <PageTitle title="Blog" src="https://i.postimg.cc/Y9T9bzgX/contactus.png" />
+      <PageTitle title="Blog" src="https://i.postimg.cc/Y9T9bzgX/contactus.png" uppercase={true} />
       <main className="max-w-[1350px] px-10 lg:px-[100px] 2xl:px-0 mx-auto">
         <div className="text-center my-20">
           <h6 className="font-semibold text-[#6B9B7B]">Blogs</h6>
