@@ -131,7 +131,7 @@ export default function Navbar() {
         {isMediumDevice && <i onClick={() => setIsMenuOpen(!isMenuOpen)} className={`fa-solid ${isMenuOpen ? "fa-xmark" : "fa-bars"} mr-3 md:mr-0 text-3xl p-px cursor-pointer `}></i>}
       </div>
       {isMediumDevice && (
-        <div className={`transition-opacity ease-in-out duration-300 ${isMenuOpen ? "fixed inset-0 bg-black bg-opacity-50 z-40" : "opacity-0 pointer-events-none"}`}>
+        <div className={`transition-opacity ease-in-out duration-300 ${isMenuOpen ? "fixed inset-0 bg-black bg-opacity-80 z-40" : "opacity-0 pointer-events-none"}`}>
           <div ref={ref} className={`fixed inset-y-0 transform transition-transform ease-in-out duration-300 ${isMenuOpen ? "translate-x-0" : "-translate-x-full"} z-50 bg-gray-900 text-white min-h-screen w-1/2 py-8`}>
             <div className="flex justify-end px-4">
               <button onClick={() => setIsMenuOpen(false)} className="text-white focus:outline-none">
