@@ -4,6 +4,11 @@ const ServiceDetailsMain = () => {
   return (
     <div className="w-full p-4">
       <div className="space-y-[32px]">
+        <figure className="mb-10 relative h-[564px]">
+          <div className="absolute inset-0 flex items-center justify-center">
+            <img className="w-full h-full max-w-full max-h-full rounded-tl-[8rem] rounded-br-[8rem]" src="https://i.ibb.co/hFZN3H9/Ima23ge.png" alt="Blog Featured Image" />
+          </div>
+        </figure>
         {Array.from({ length: 12 }).map((_, index) => (
           <div key={index} className=" max-w-none">
             <h1 className="text-[#02061A] font-semibold text-[36px]">Introduction:</h1>

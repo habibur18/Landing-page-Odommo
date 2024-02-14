@@ -5,7 +5,7 @@ import star from "../../../../assets/star.svg";
 const SingleServiceLeft = () => {
   const title = "Publish your passions, your way - Create a unique and beautiful blog easily.";
   return (
-    <div className="space-y-5 w-full h-full xl:w-[calc(100%-340px)] px-4 sticky top-0 xl:flex-[0_0_340px] md:max-w-[300px] lg:max-w-full">
+    <div className="space-y-5  w-full h-full xl:w-[calc(100%-340px)] px-4 sticky top-0 xl:flex-[0_0_382px] lg:max-w-full mt-8">
       {/* search bar */}
       <div className="relative">
         <input className="w-full text-[#737373] border-2 border-[#737373]/50 px-[24px] py-[13px] rounded-[36px] shadow-md outline-none focus:ring-2 focus:ring-[#0198FE] duration-300" type="search" placeholder="Search here..." />
@@ -15,7 +15,7 @@ const SingleServiceLeft = () => {
       </div>
       {/* categories */}
       <div className="border-2 border-[#737373]/50 p-4 mt-4 rounded-[36px] shadow-md">
-        <h2 className="text-[32px] font-semibold text-gray-800 mb-4">Categories</h2>
+        <h2 className="text-[32px] font-semibold text-gray-800 mb-4">Main Services</h2>
         <ul className="list-none">
           {Array.from({ length: 5 }).map((_, index) => (
             <li key={index} className="mb-2 text-[20px] font-semibold border border-gray-300">

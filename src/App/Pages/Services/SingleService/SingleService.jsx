@@ -12,15 +12,9 @@ const SingleService = () => {
       <main className="flex flex-col justify-center">
         <article className="max-w-[1650px] mx-auto px-4 sm:px-10 2xl:px-10">
           <div className=" py-8">
-            <figure className="mb-10 relative my-[92px] h-[564px]">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <img className="w-full h-full max-w-full max-h-full rounded-tl-[8rem] rounded-br-[8rem]" src="https://i.ibb.co/hFZN3H9/Ima23ge.png" alt="Blog Featured Image" />
-              </div>
-            </figure>
-
-            <div className=" flex flex-col md:flex-row gap-5">
+            <div className=" flex flex-col lg:flex-row gap-5">
               <ServiceDetailsMain />
-              <img src={line} className="h-full mt-8 w-[2px] hidden md:block" alt="" />
+              <img src={line} className="h-full mt-4 w-[2px] hidden lg:block" alt="" />
               <SingleServiceLeft />
             </div>
             {/* share social media */}
