@@ -10,7 +10,7 @@ const SectionWithImage = ({ title, description, imageUrl, buttonText, reverse })
         <div className="flex-[0.6]">
           <h1 className="text-4xl font-bold mb-4">{title}</h1>
           <p className="text-[#767676] mb-4 max-w-[60ch] leading-loose">{description}</p>
-          {buttonText && <button className=" py-[16px] px-[65px] rounded-[36px] bg-[#0198FE] hover:bg-[#0198FE]/80  text-white hover:bg-blue-700 transition duration-300 ease-in-out">{buttonText}</button>}
+          {buttonText && <button className=" py-[16px] px-[65px] rounded-[36px] bg-[#0198FE] hover:bg-[#0198FE]/80  text-white transition duration-300 ease-in-out">{buttonText}</button>}
         </div>
       </div>
     </div>
