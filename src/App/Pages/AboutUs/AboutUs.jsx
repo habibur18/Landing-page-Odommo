@@ -5,7 +5,6 @@ import ServiceHighlightsSection from "../../../ReuseableComponents/ServiceHighli
 import ServiceTile from "../../../ReuseableComponents/ServiceTile ";
 import TeamMember from "../../../ReuseableComponents/TeamMember";
 import PartnerWithUs from "../Home/PartnerWithUs";
-
 const AboutUs = () => {
   return (
     <div className="mt-20">
