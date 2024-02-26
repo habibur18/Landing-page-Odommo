@@ -79,7 +79,7 @@ const Contact = () => {
                 </Link>
               </label>
 
-              <button className="w-48 bg-[#0198FE] text-white px-3 py-3 sm:px-5 my-5 mx-5 sm:py-4 rounded-[36px] flex justify-center gap-2" type="submit">
+              <button className="w-48 bg-[#0198FE] hover:bg-white hover:text-[#0198FE] hover:ring-2 hover:ring-[#0198FE] duration-300 text-white px-3 py-3 sm:px-5 my-5 mx-5 sm:py-4 rounded-[36px] flex justify-center gap-2" type="submit">
                 Submit
               </button>
             </div>

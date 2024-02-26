@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import Line from "../../../assets/Line49.svg";
 export default function HeroSection() {
   return (
-    <section className="bg-[#E8F6FF] py-[150px]  md:py-[200px]">
-      <div className=" max-w-[1350px] px-10 lg:px-[98px]  2xl:px-0  mx-auto flex md:flex-row items-center flex-col justify-center gap-x-10 xl:gap-x-16">
+    <section className="bg-[#E8F6FF] pt-[200px] pb-[110px]">
+      <div className=" max-w-[1350px] px-10 lg:px-[98px]  2xl:px-0  mx-auto flex md:flex-row items-center flex-col justify-center gap-x-14 gap-y-10 xl:gap-x-16">
         <motion.div initial={{ opacity: 0, x: -200 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -100 }} transition={{ duration: 1, delay: 0.2, type: "spring", stiffness: 100 }} className="relative w-full lg:w-2/4">
           <img className="w-full" src="https://i.ibb.co/KV2CXNv/hero-main.png" alt="" />
           <div className="absolute -top-10 -right-0 md:-right-10">
@@ -13,7 +13,7 @@ export default function HeroSection() {
           </div>
         </motion.div>
         <motion.div initial={{ opacity: 0, x: 200 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 100 }} transition={{ duration: 1 }} className="space-y-5">
-          <h1 className="text-5xl md:text-4xl lg:text-5xl xl:text-6xl font-bold my-10 max-w-[400px] tracking-[.5rem] ">
+          <h1 className=" text-4xl lg:text-[40px] xl:text-6xl font-bold lg:max-w-[400px] tracking-[.5rem] ">
             Elevate Your Business With <span className="bg-gray-300 bg-opacity-14 border-4 border-[#0198FE] px-3 rounded-md inline-block text-[#0198FE]">IT</span>
             Solutions{" "}
           </h1>
@@ -28,7 +28,7 @@ export default function HeroSection() {
             </Link>
           </motion.div>
         </motion.div>
-        <motion.div initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="hidden lg:block flex-grow self-end justify-self-end">
+        <motion.div initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="hidden lg:block flex-grow self-end justify-self-end ">
           <div className="flex flex-col items-centerml-auto">
             <div className=" w-full flex justify-end -ml-3">
               <img src={Line} alt="" />

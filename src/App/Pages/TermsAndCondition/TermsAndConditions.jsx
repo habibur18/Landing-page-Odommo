@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const TermsAndConditions = () => {
   const termsAndConditionsData = [
@@ -84,6 +85,13 @@ const TermsAndConditions = () => {
 
   return (
     <div className="max-w-[1350px] px-10 lg:px-[80px] 2xl:px-0 mx-auto pt-[120px] [&>div>p]:text-[#666666]">
+      <div className="flex items-center gap-5 mt-[90px] mb-[48px]">
+        <Link to="/" className="text-[18px] cursor-pointer">
+          Home
+        </Link>
+        <i className="fa-solid fa-arrow-right text-[#777777]"></i>
+        <p className="text-[#777777]">Terms & Conditions</p>
+      </div>
       <div>
         <h1 className="text-4xl font-bold">Terms & Conditions</h1>
         <p className="my-20">Welcome to Odommo XYZ! We're delighted to have you on board. Before you dive into exploring our services, please take a moment to read through our Terms and Conditions. By using our website and services, you agree to comply with and be bound by these terms. If you disagree with any part of these terms, please refrain from using our services.</p>

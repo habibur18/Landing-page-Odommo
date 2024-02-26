@@ -3,11 +3,11 @@ import React from "react";
 export default function ServiceHighlightsSection() {
   return (
     <section>
-      <div className="max-w-[1350px] pt-[88px] px-10 lg:px-[92px] 2xl:px-0 mx-auto">
+      <div className="max-w-[1350px] mt-[88px] mb-[142px] px-10 lg:px-[92px] 2xl:px-0 mx-auto">
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-24">
           <div className="w-3/4">
-            <h2 className="max-w-[300px] text-4xl font-bold ">
-              WHY CHOOSE <span className="text-[#3B82F6]">ODOMMO XYZ</span>{" "}
+            <h2 className=" lg:max-w-[12ch] text-4xl font-bold ">
+              <span className="">Why Choose</span> <span className="text-[#3B82F6]">ODOMMO XYZ</span>{" "}
             </h2>
           </div>
           <div className="lg:w-[70%] 2xl:w-[80%] md:ml-14">

@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 export default function ServiceTile({ title, button }) {
   return (
-    <section className="my-10 bg-[#F5F5F5] ">
-      <div className={`max-w-[1350px] ${title ? "py-[67px]" : "py-[53px]"}  px-10 lg:px-[172px]  md:px-10 2xl:px-0 mx-auto space-y-10`}>
+    <section className=" bg-[#F5F5F5] ">
+      <div className={`max-w-[1350px] ${title ? "pt-[81px] pb-[75px]" : "pt-[173px] pb-[75px]"}  px-10 lg:px-[172px]  md:px-10 2xl:px-0 mx-auto space-y-10`}>
         {title && (
           <div className="text-center mb-10">
             <motion.h1 initial={{ y: 70, opacity: 0, scale: 0 }} whileInView={{ y: 0, opacity: 1, scale: 1 }} transition={{ delay: 0.3, type: "spring", stiffness: 60, ease: "easeIn", duration: 1, opacity: { duration: 0.5 } }} className="text-4xl font-bold pb-10">

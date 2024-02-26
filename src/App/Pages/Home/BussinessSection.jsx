@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function BussinessSection() {
   return (
     <section>
-      <div className="max-w-[1350px] pt-[92px] px-10 lg:px-[98px]  2xl:px-0 mx-auto flex flex-col md:flex-row justify-between items-center gap-12 lg:gap-24">
+      <div className="max-w-[1350px] mt-[30px] py-[92px] px-10 lg:px-[98px] 2xl:px-0 mx-auto flex flex-col md:flex-row justify-between items-center gap-12 lg:gap-24">
         <div className="space-y-10 my-10 md:my-0 md:w-5/6">
           <motion.h1 initial={{ x: -100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ delay: 0.2, type: "spring", stiffness: 60, ease: "easeIn", duration: 1 }} className="text-4xl font-bold">
             Business & IT Solutions In Bangladesh
@@ -15,7 +15,7 @@ export default function BussinessSection() {
             <p>We believe in the power of technology and innovation to drive business success. With years of experience in the industry, our team of skilled professionals is committed to delivering high-quality services that exceed our client`s expectations. We understand that each business</p>
           </motion.div>
           <motion.div initial={{ x: -100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ delay: 0.4, type: "spring", stiffness: 60, ease: "easeIn", duration: 1 }} className="my-10">
-            <Link onClick={() => window.scrollTo(0, 0)} to="/#" className="group bg-[#0198FE] hover:bg-[#0198FE]/80 duration-300 text-white px-8  py-4 rounded-[36px] font-medium">
+            <Link onClick={() => window.scrollTo(0, 0)} to="/#" className="btn">
               Read More
             </Link>
           </motion.div>

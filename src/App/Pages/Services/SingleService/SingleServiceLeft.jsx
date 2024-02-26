@@ -5,7 +5,7 @@ import star from "../../../../assets/star.svg";
 const SingleServiceLeft = () => {
   const title = "Publish your passions, your way - Create a unique and beautiful blog easily.";
   return (
-    <div className="space-y-5  w-full h-full xl:w-[calc(100%-340px)] px-4 sticky top-0 xl:flex-[0_0_382px] lg:max-w-full mt-8">
+    <div className="space-y-16  w-full h-full xl:w-[calc(100%-340px)] px-4 sticky top-0 lg:flex-[0_0_340px] xl:flex-[0_0_382px] lg:max-w-full mt-8">
       {/* search bar */}
       <div className="relative">
         <input className="w-full text-[#737373] border-2 border-[#737373]/50 px-[24px] py-[13px] rounded-[36px] shadow-md outline-none focus:ring-2 focus:ring-[#0198FE] duration-300" type="search" placeholder="Search here..." />

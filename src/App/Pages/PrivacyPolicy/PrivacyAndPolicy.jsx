@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const PrivacyAndPolicy = () => {
   // Define data object
@@ -60,6 +61,13 @@ const PrivacyAndPolicy = () => {
 
   return (
     <main className="max-w-[1350px] px-10 lg:px-[80px] 2xl:px-0 mx-auto pt-[150px]">
+      <div className="flex items-center gap-5 mt-[90px] mb-[48px]">
+        <Link to="/" className="text-[18px] cursor-pointer">
+          Home
+        </Link>
+        <i className="fa-solid fa-arrow-right text-[#777777]"></i>
+        <p className="text-[#777777]">Terms & Conditions</p>
+      </div>
       <h1 className="text-4xl font-bold">Privacy Policy</h1>
       <p className="mt-8">Your privacy is of utmost importance to us. This Privacy Policy is intended to provide you with comprehensive details on how Odommo.xyz collects, uses, shares, and safeguards your personal information. By accessing our website and utilizing our services, you agree to the terms outlined in this policy.</p>
       <article className="mt-8 text-justify">

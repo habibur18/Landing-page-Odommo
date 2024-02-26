@@ -57,7 +57,14 @@ export default function Footer() {
               <ul className="text-[#A3A3A3] capitalize">
                 {categoryObj.items.map((item) => (
                   <li className="my-2" key={item.name}>
-                    <Link to={item.path}>{item.name}</Link>
+                    <Link
+                      onClick={() => {
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
+                      to={item.path}
+                    >
+                      {item.name}
+                    </Link>
                   </li>
                 ))}
               </ul>

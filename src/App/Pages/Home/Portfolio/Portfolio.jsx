@@ -1,43 +1,61 @@
-import { AnimatePresence } from "framer-motion";
-import React, { createContext, useContext, useEffect, useState } from "react";
-import ButtonFilters from "./ButtonFilters";
-import PortfolioItems from "./PortfolioItems";
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 
-const PortfolioContext = createContext(null);
-export const usePortfolio = () => useContext(PortfolioContext);
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+// import required modules
+import { Link } from "react-router-dom";
+import { Navigation } from "swiper/modules";
+
 const Portfolio = () => {
-  const [popularMovies, setPopularMovies] = useState([]);
-  const [filteredMovies, setFilteredMovies] = useState([]);
-
-  // ee1aafed03e789a85a2b800eba2360ac
-  const getFechPopularMovies = async () => {
-    // const response = await fetch("https://api.themoviedb.org/3/movie/popular?api_key=ee1aafed03e789a85a2b800eba2360ac&language=en-US&page=1");
-    const response = await fetch("/portfolio.json");
-    const data = await response.json();
-    setPopularMovies(data.results);
-    setFilteredMovies(data.results);
-  };
-  useEffect(() => {
-    getFechPopularMovies();
-  }, []);
-  // console.log(popularMovies);
   return (
-    <PortfolioContext.Provider value={{ popularMovies, filteredMovies, setFilteredMovies }}>
-      <div className="max-w-[1650px] px-10 lg:px-[80px] 2xl:px-20 mx-auto pt-[72px] my-20 ">
-        <div className=" flex lg:flex-row flex-col items-center gap-10 lg:gap-40 ">
-          <h2 className="text-4xl font-bold lg:w-[35%]">
-            Explore Our <br /> Recent Works
-          </h2>
-          <p className="max-w-[60ch]  w-full text-justify">We value the experimentation, the reformation of the message, and the smart incentives. We offer a variety of services and solutions Worldwide and this is at the heart of how we approach our.</p>
+    <section className="mt-[141px] pb-[241px]">
+      <div className="max-w-[1350px] px-10 lg:px-[110px] 2xl:px-0 mx-auto">
+        <div className="text-4xl mb-20 font-bold text-center">
+          <h1>Our Team Member</h1>
         </div>
-        <ButtonFilters />
-        <div className="grid grid-cols-2 md:grid-cols-3 2xl:grid-cols-3  gap-10">
-          <AnimatePresence>
-            <PortfolioItems />
-          </AnimatePresence>
+        <div className="relative">
+          <Swiper cssMode={true} navigation={{ nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" }} modules={[Navigation]} className="mySwiper" style={{ overflow: "visible" }}>
+            {Array.from({ length: 4 }).map((_, index) => (
+              <SwiperSlide key={index}>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-10 gap-y-10">
+                  {Array.from({ length: 4 }).map((_, index) => (
+                    <article key={index} className="pt-[15px] pb-[26px] px-[18px] bg-[#262627] rounded-[6px]">
+                      <div>
+                        <h3 style={{ fontFamily: "Rowdies" }} className="mb-[10px] text-[28px] font-normal text-[#FCFCFC]">
+                          Educare
+                        </h3>
+                        <figure className="w-full relative group">
+                          <img className="w-full" src="https://i.ibb.co/0FBngWm/74c56f5da66e1886ff040efc13684871.png" alt="" />
+                          <div className="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 size-[122px] bg-[#0198FE] rounded-full flex justify-center items-center font-medium text-[#FFFFFF] scale-0 group-hover:scale-100 duration-300 ">
+                            <Link to="/portfolio-details">See Details</Link>
+                          </div>
+                        </figure>
+                        <div className="flex items-center gap-[12px] mt-[21px]">
+                          <button className="border border-[#F78723] py-[6px] px-[22px] rounded-[16px] text-[#EFF2F2]">SEO</button>
+                          <button className="border border-[#F78723] py-[6px] px-[22px] rounded-[16px] text-[#EFF2F2] ">Online Education</button>
+                        </div>
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+          <div style={{ zIndex: 100 }} className="absolute -bottom-20 left-1/2 -translate-x-1/2  ">
+            <button style={{ color: "white", backgroundColor: "#0198FE", zIndex: 200 }} className=" swiper-button-prev border px-8 py-5">
+              <i className="fa-solid fa-arrow-right flex border h-full w-full justify-center items-center "></i>
+            </button>
+            <button style={{ color: "#3B82F6", backgroundColor: "#FFFFFF" }} className=" swiper-button-next px-8 py-5">
+              <i className="fa-solid fa-arrow-left flex border h-full w-full justify-center items-center"></i>
+            </button>
+          </div>
         </div>
       </div>
-    </PortfolioContext.Provider>
+    </section>
   );
 };
 

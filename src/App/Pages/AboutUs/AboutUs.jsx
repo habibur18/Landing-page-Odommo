@@ -41,7 +41,8 @@ const AboutUs = () => {
       </section>
       <section>
         <ServiceHighlightsSection />
-        <ServiceTile button={true} />
+        <ServiceTile title="Our Best Services" button={true} />
+        <div className="mt-[99px]"></div>
         <TeamMember />
         <PartnerWithUs />
       </section>

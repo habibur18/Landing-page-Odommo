@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function SearchDomain() {
   return (
-    <section className="my-20 bg">
+    <section className="">
       <div className="max-w-[1350px] px-10 2xl:px-0 mx-auto bg-[#F5F5F5] py-20 rounded-md">
         <div className="flex flex-col items-center space-y-10">
           <h1 className="text-4xl font-bold">Make more online, for less</h1>

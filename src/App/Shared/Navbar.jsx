@@ -107,7 +107,7 @@ export default function Navbar() {
                   </li>
                   <li>
                     <Link onClick={() => window.scrollTo(0, 0)} to="/contact-us" className="group bg-[#0198FE] text-white px-3 py-3 sm:px-5 sm:py-4 rounded-[36px] flex justify-center gap-2 hover:bg-white hover:text-[#0198FE] hover:ring-2 hover:ring-[#0198FE] duration-300 group shadow-lg">
-                      get started{" "}
+                      Get Started{" "}
                       <span className="transform  inline-block translate-x-0 group-hover:translate-x-2 duration-300">
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none" className="stroke-current">
                           <path d="M7.5 17.5L17.5 7.5M17.5 7.5H7.5M17.5 7.5V17.5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -119,21 +119,11 @@ export default function Navbar() {
               )}
             </ul>
           </div>
-          {isMediumDevice && (
-            <Link onClick={() => window.scrollTo(0, 0)} to="/contact-us" className="group bg-[#0198FE] text-white px-2  py-4  sm:px-5 sm:py-4 rounded-md sm:rounded-[36px] flex justify-center gap-2 hover:bg-white hover:text-[#0198FE] hover:ring-2 hover:ring-[#0198FE] duration-300 group mx-3">
-              get started{" "}
-              <span className="transform hidden sm:block  translate-x-0 group-hover:translate-x-2 duration-300">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none" className="stroke-current">
-                  <path d="M7.5 17.5L17.5 7.5M17.5 7.5H7.5M17.5 7.5V17.5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </span>
-            </Link>
-          )}
           {isMediumDevice && <i onClick={() => setIsMenuOpen(!isMenuOpen)} className={`fa-solid ${isMenuOpen ? "fa-xmark" : "fa-bars"} mr-3 md:mr-0 text-3xl p-px cursor-pointer `}></i>}
         </div>
         {isMediumDevice && (
-          <div className={`transition-opacity ease-in-out duration-300 ${isMenuOpen ? "fixed inset-0 bg-black bg-opacity-80 z-40" : "opacity-0 pointer-events-none"}`}>
-            <div ref={ref} className={`fixed inset-y-0 transform transition-transform ease-in-out duration-300 ${isMenuOpen ? "translate-x-0" : "-translate-x-full"} z-50 bg-gray-900 text-white min-h-screen w-1/2 py-8`}>
+          <div className={`transition-opacity ease-in-out duration-300 ${isMenuOpen ? "fixed inset-0 bg-black bg-opacity-50 z-40" : "opacity-0 pointer-events-none"}`}>
+            <div ref={ref} className={`fixed inset-y-0 transform transition-transform ease-in-out duration-300 ${isMenuOpen ? "translate-x-0" : "-translate-x-full"} z-50 bg-gray-800 text-white min-h-screen w-1/2 py-8`}>
               <div className="flex justify-end px-4">
                 <button onClick={() => setIsMenuOpen(false)} className="text-white focus:outline-none">
                   <svg className="h-6 w-6 cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -143,20 +133,38 @@ export default function Navbar() {
               </div>
               <ul className="uppercase flex flex-col gap-5 font-medium p-5">
                 <li>
-                  <NavLinkTracker to="/">Home</NavLinkTracker>
+                  <NavLinkTracker to="/" className="text-gray-200 hover:text-white">
+                    Home
+                  </NavLinkTracker>
                 </li>
                 <li>
-                  <NavLinkTracker to="/about-us">About</NavLinkTracker>
+                  <NavLinkTracker to="/about-us" className="text-gray-200 hover:text-white">
+                    About
+                  </NavLinkTracker>
                 </li>
                 <li>
-                  <NavLinkTracker to="/services">Services</NavLinkTracker>
+                  <NavLinkTracker to="/services" className="text-gray-200 hover:text-white">
+                    Services
+                  </NavLinkTracker>
                 </li>
                 <li>
-                  <NavLinkTracker to="/blog">Blog</NavLinkTracker>
+                  <NavLinkTracker to="/blog" className="text-gray-200 hover:text-white">
+                    Blog
+                  </NavLinkTracker>
                 </li>
                 <li>
-                  <NavLinkTracker to="/contact-us">Contact</NavLinkTracker>
+                  <NavLinkTracker to="/contact-us" className="text-gray-200 hover:text-white">
+                    Contact
+                  </NavLinkTracker>
                 </li>
+                <Link onClick={() => window.scrollTo(0, 0)} to="/contact-us" className="group bg-[#0198FE] text-white px-2  py-4 sm:py-4 rounded-md sm:rounded-[36px] flex justify-center gap-2 hover:bg-white hover:text-[#0198FE] hover:ring-2 hover:ring-[#0198FE] duration-300 group ">
+                  Get Started{" "}
+                  <span className="transform hidden sm:block  translate-x-0 group-hover:translate-x-2 duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none" className="stroke-current">
+                      <path d="M7.5 17.5L17.5 7.5M17.5 7.5H7.5M17.5 7.5V17.5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </span>
+                </Link>
               </ul>
             </div>
           </div>

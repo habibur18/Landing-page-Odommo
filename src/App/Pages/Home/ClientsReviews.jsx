@@ -29,7 +29,7 @@ export default function ClientsReviews() {
     return () => window.removeEventListener("resize", handleResize); // Cleanup the event listener
   }, []); // No need to include slideCount and setSlideCount in the dependency array
   return (
-    <section className="my-32">
+    <section className="mt-[119px]">
       <div className="max-w-[1350px] px-10 lg:px-[80px] 2xl:px-0 mx-auto overflow-hidden">
         <h1 className="text-4xl font-bold text-center my-10">What People Are Saying</h1>
 
