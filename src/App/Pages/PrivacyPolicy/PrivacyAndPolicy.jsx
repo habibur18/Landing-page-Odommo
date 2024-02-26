@@ -60,7 +60,7 @@ const PrivacyAndPolicy = () => {
   };
 
   return (
-    <main className="max-w-[1350px] px-10 lg:px-[80px] 2xl:px-0 mx-auto pt-[150px]">
+    <main className="max-w-[1350px] px-10 lg:px-[80px] 2xl:px-0 mx-auto pt-[120px]">
       <div className="flex items-center gap-5 mt-[90px] mb-[48px]">
         <Link to="/" className="text-[18px] cursor-pointer">
           Home
