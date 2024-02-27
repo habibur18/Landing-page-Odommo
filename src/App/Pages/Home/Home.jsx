@@ -16,7 +16,7 @@ export default function Home() {
     <div>
       <HeroSection />
       <BussinessSection />
-      <ServiceTile title="Our Best Services" />
+      <ServiceTile title="Our Best Services" button={true} />
       <ServiceHighlightsSection />
       <SearchDomain />
       <ClientsReviews />
