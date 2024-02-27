@@ -9,7 +9,7 @@ const SectionWithImage = ({ title, description, imageUrl, buttonText, reverse })
         </div>
         <div className="flex-[0.6]">
           <h1 className="text-4xl font-bold mb-4">{title}</h1>
-          <p style={{ lineHeight: "32px" }} className="text-[#767676] mb-4 max-w-[60ch] leading-loose">
+          <p style={{ lineHeight: "32px" }} className="text-[#767676] mb-4 max-w-[60ch] leading-loose text-justify lg:max-w-[56ch]">
             {description}
           </p>
           {buttonText && <button className=" py-[16px] px-[65px] rounded-[36px] bg-[#0198FE] hover:bg-white hover:text-[#0198FE] hover:ring-2 hover:ring-[#0198FE]  text-white transition duration-300 ease-in-out">{buttonText}</button>}
