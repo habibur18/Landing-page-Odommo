@@ -5,7 +5,7 @@ import star from "../../../../assets/star.svg";
 const BlogLeftSide = () => {
   const title = "Publish your passions, your way - Create a unique and beautiful blog easily.";
   return (
-    <div className="space-y-5 w-full h-full xl:w-[calc(100%-340px)] px-4 sticky top-0 xl:flex-[0_0_340px] md:max-w-[300px] lg:max-w-full">
+    <div className="space-y-[26px] w-full h-full xl:w-[calc(100%-340px)] px-4 sticky top-0 lg:flex-[0_0_340px] xl:flex-[0_0_382px] lg:max-w-full">
       {/* search bar */}
       <div className="relative">
         <input className="w-full text-[#737373] border-[1px] border-[#737373]/50 px-[24px] py-[13px] rounded-[36px] shadow-md outline-none focus:ring-2 focus:ring-[#0198FE] duration-300" type="search" placeholder="Search here..." />
@@ -34,13 +34,13 @@ const BlogLeftSide = () => {
       </div>
 
       {/* Support */}
-      <div className="bg-[#0198FE] p-4 mt-4 space-y-3 rounded-md">
-        <figure>
-          <img className="max-w-[100px] mx-auto" src="https://i.ibb.co/qBshbmv/0e9e0c1b66ea34f75640f7e5471644af.png" alt="" />
+      <div className="bg-[#0198FE] p-[49px] mt-4 rounded-[36px]">
+        <figure className="border-4 mb-3 rounded-full size-[75px] flex justify-center items-center mx-auto">
+          <img className="max-w-[100px]  size-[40px] mx-auto" src="https://i.ibb.co/qBshbmv/0e9e0c1b66ea34f75640f7e5471644af.png" alt="" />
         </figure>
         <p className="text-center text-white">24/7 Emergency Service</p>
-        <p className="text-center text-white">019234234234</p>
-        <p className="text-center text-white">support@odommo.xyz</p>
+        <p className="text-center text-white text-[32px] font-bold">019234234234</p>
+        <p className="text-center text-white text-[24px] font-medium">support@odommo.xyz</p>
       </div>
     </div>
   );

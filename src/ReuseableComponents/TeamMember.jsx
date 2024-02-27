@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -10,6 +10,7 @@ import "swiper/css/pagination";
 import { Navigation } from "swiper/modules";
 
 export default function TeamMember() {
+  const [activeButton, setActiveButton] = useState("");
   return (
     <section className="bg-[#F5F5F5] py-24">
       <div className="max-w-[1350px] px-10 lg:px-[110px] 2xl:px-0 mx-auto">
@@ -89,12 +90,12 @@ export default function TeamMember() {
               </SwiperSlide>
             ))}
           </Swiper>
-          <div style={{ zIndex: 100 }} className="absolute -top-10 right-28 ">
-            <button style={{ color: "#3B82F6", backgroundColor: "#FFFFFF" }} className="swiper-button-next  px-8 py-5">
+          <div style={{ zIndex: 100 }} className="absolute -top-10 right-28">
+            <button style={{ color: activeButton === "next" ? "#FFFFFF" : "#3B82F6", backgroundColor: activeButton === "next" ? "#0198FE" : "#FFFFFF" }} className="swiper-button-next px-8 py-5" onClick={() => setActiveButton("next")}>
               <i className="fa-solid fa-arrow-left flex border h-full w-full justify-center items-center"></i>
             </button>
-            <button style={{ color: "white", backgroundColor: "#0198FE", zIndex: 200 }} className="swiper-button-prev  px-8 py-5">
-              <i className="fa-solid fa-arrow-right flex border h-full w-full justify-center items-center "></i>
+            <button style={{ color: activeButton === "prev" ? "#FFFFFF" : "#0198FE", backgroundColor: activeButton === "prev" ? "#0198FE" : "#FFFFFF" }} className="swiper-button-prev px-8 py-5" onClick={() => setActiveButton("prev")}>
+              <i className="fa-solid fa-arrow-right flex border h-full w-full justify-center items-center"></i>
             </button>
           </div>
         </div>

@@ -1,21 +1,22 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
-// import required modules
-import { Link } from "react-router-dom";
 import { Navigation } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 const Portfolio = () => {
+  const [activeButton, setActiveButton] = useState("");
+
   return (
     <section className="mt-[141px] pb-[241px]">
       <div className="max-w-[1350px] px-10 lg:px-[110px] 2xl:px-0 mx-auto">
-        <div className="text-4xl mb-20 font-bold text-center">
-          <h1>Our Team Member</h1>
+        <div className="mb-20 flex">
+          <h1 className=" text-4xl  font-bold w-full">
+            <p className="lg:max-w-[12ch]">Explore Our Recent Works</p>
+          </h1>
+          <p className="w-full lg:max-w-[63ch] text-justify">We value the experimentation, the reformation of the message, and the smart incentives. We offer a variety of services and solutions Worldwide and this is at the heart of how we approach our.</p>
         </div>
         <div className="relative">
           <Swiper cssMode={true} navigation={{ nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" }} modules={[Navigation]} className="mySwiper" style={{ overflow: "visible" }}>
@@ -46,10 +47,10 @@ const Portfolio = () => {
             ))}
           </Swiper>
           <div style={{ zIndex: 100 }} className="absolute -bottom-20 left-1/2 -translate-x-1/2  ">
-            <button style={{ color: "white", backgroundColor: "#0198FE", zIndex: 200 }} className=" swiper-button-prev border px-8 py-5">
+            <button style={{ color: activeButton === "prev" ? "#FFFFFF" : "#0198FE", backgroundColor: activeButton === "prev" ? "#0198FE" : "#FFFFFF", zIndex: 200 }} className="swiper-button-prev border px-8 py-5" onClick={() => setActiveButton("prev")}>
               <i className="fa-solid fa-arrow-right flex border h-full w-full justify-center items-center "></i>
             </button>
-            <button style={{ color: "#3B82F6", backgroundColor: "#FFFFFF" }} className=" swiper-button-next px-8 py-5">
+            <button style={{ color: activeButton === "next" ? "#FFFFFF" : "#3B82F6", backgroundColor: activeButton === "next" ? "#0198FE" : "#FFFFFF" }} className="swiper-button-next px-8 py-5" onClick={() => setActiveButton("next")}>
               <i className="fa-solid fa-arrow-left flex border h-full w-full justify-center items-center"></i>
             </button>
           </div>

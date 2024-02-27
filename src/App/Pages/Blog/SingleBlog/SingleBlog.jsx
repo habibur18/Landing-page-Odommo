@@ -20,7 +20,7 @@ const SingleBlog = () => {
 
             <div className=" flex flex-col md:flex-row gap-5">
               <BlogDetails />
-              <img src={line} className="h-full mt-8 w-[2px] hidden md:block" alt="" />
+              <img src={line} className="h-full mt-8 w-[1px] hidden md:block" alt="" />
               <BlogLeftSide />
             </div>
             {/* share social media */}
