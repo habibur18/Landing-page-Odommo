@@ -119,7 +119,7 @@ export default function Navbar() {
               )}
             </ul>
           </div>
-          {isMediumDevice && <i onClick={() => setIsMenuOpen(!isMenuOpen)} className={`fa-solid ${isMenuOpen ? "fa-xmark" : "fa-bars"} mr-3 md:mr-0 text-3xl p-px cursor-pointer `}></i>}
+          {isMediumDevice && <i onClick={() => setIsMenuOpen(!isMenuOpen)} className={`fa-solid ${isMenuOpen ? "fa-xmark" : "fa-bars"} mr-3 md:mr-0 text-3xl text-[#0198FE] p-px cursor-pointer `}></i>}
         </div>
         {isMediumDevice && (
           <div className={`transition-opacity ease-in-out duration-300 ${isMenuOpen ? "fixed inset-0 bg-black bg-opacity-50 z-40" : "opacity-0 pointer-events-none"}`}>
@@ -157,13 +157,13 @@ export default function Navbar() {
                     Contact
                   </NavLinkTracker>
                 </li>
-                <Link onClick={() => window.scrollTo(0, 0)} to="/contact-us" className="group bg-[#0198FE] text-white px-2  py-4 sm:py-4 rounded-md sm:rounded-[36px] flex justify-center gap-2 hover:bg-white hover:text-[#0198FE] hover:ring-2 hover:ring-[#0198FE] duration-300 group ">
+                <Link onClick={() => window.scrollTo(0, 0)} to="/contact-us" className="group bg-[#0198FE] text-white px-2 max-w-max py-4 sm:py-4 rounded-md flex justify-center gap-2 hover:bg-white hover:text-[#0198FE] hover:ring-2 hover:ring-[#0198FE] duration-300 group ">
                   Get Started{" "}
-                  <span className="transform hidden sm:block  translate-x-0 group-hover:translate-x-2 duration-300">
+                  {/* <span className="transform hidden sm:block  translate-x-0 group-hover:translate-x-2 duration-300">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none" className="stroke-current">
                       <path d="M7.5 17.5L17.5 7.5M17.5 7.5H7.5M17.5 7.5V17.5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
-                  </span>
+                  </span> */}
                 </Link>
               </ul>
             </div>
