@@ -30,7 +30,7 @@ export default function ServiceTile({ title, button }) {
               </Link>
             </motion.div>
           </motion.div> */}
-          {Array.from({ length: 3 }).map((_, index) => (
+          {Array.from({ length: 4 }).map((_, index) => (
             <motion.div key={index} initial={{ y: 170 }} whileInView={{ y: 0 }} transition={{ delay: 0.2, y: { type: "spring", stiffness: 60 }, ease: "easeIn", duration: 1 }} className="max-w-[540px] 2xl:max-w-full rounded-md space-y-5 text-center bg-[#fff] p-[25px] shadow-lg">
               <motion.div initial={{ y: -170 }} whileInView={{ y: 0 }} transition={{ delay: 0.2, y: { type: "spring", stiffness: 60 }, ease: "easeIn", duration: 1 }} className="w-full flex justify-center z-20">
                 <motion.img initial={{ scale: 0.5 }} whileInView={{ scale: 1 }} transition={{ delay: 0.2, type: "spring", stiffness: 60, duration: 1 }} className="w-[70px]" src="https://i.ibb.co/85yNXcZ/website-design.png" alt="" />
