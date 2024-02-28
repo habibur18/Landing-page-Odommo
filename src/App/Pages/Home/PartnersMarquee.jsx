@@ -3,7 +3,7 @@ import Marquee from "react-fast-marquee";
 
 export default function PartnersMarquee() {
   return (
-    <section className="overflow-hidden">
+    <section className="overflow-hidden pb-[60px]">
       <div className="relative  2xl:px-0 mx-auto">
         <h1 className="text-4xl font-bold text-center my-[44px]">Our Partners</h1>
         <article>
