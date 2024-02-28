@@ -47,8 +47,9 @@ const AboutUs = () => {
           <ServiceTile title="Our Best Services" button={true} />
         </div>
         <TeamMember />
-        <div className="mt-[80px]"></div>
-        <PartnerWithUs />
+        <div className="mt-[80px] mb-[80px]">
+          <PartnerWithUs />
+        </div>
       </section>
     </div>
   );
