@@ -40,7 +40,7 @@ const AboutUs = () => {
         />
       </section>
       <section>
-        <div className="mb-[80px] border">
+        <div className="mb-[80px]">
           <ServiceHighlightsSection />
         </div>
         <div className="mb-[80px] pt-[40px]">
