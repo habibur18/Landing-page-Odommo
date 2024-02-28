@@ -19,18 +19,20 @@ const Blog = () => {
           {Array.from({ length: 6 }).map((_, index) => (
             <article key={index} className="space-y-5 max-w-[624px] mx-auto bg-[#DADBDD7A]/[0.48]  rounded-md">
               <figure>
-                <img src="https://i.ibb.co/nkWp8gZ/Image.png" className="rounded-lg" alt="" />
+                <img src="https://i.ibb.co/nkWp8gZ/Image.png" className="rounded-lg w-full border-2 border-red-300" alt="" />
               </figure>
-              <div className="p-5">
-                <div className="flex justify-between text-sm my-2">
+              <div>
+                <div className="flex justify-between text-sm my-2 px-5">
                   <p>02 January 2024</p>
                   <p>2 COMMENTS</p>
                 </div>
-                <h3 className="text-[28px] font-bold leading-7">Regional Manager & Limited time management.</h3>
-                <p className="text-justify mb-4">{totalChar > 306 ? desc.slice(0, 306).replace(/\s+$/, "") + "..." : desc}</p>
-                <Link className="mt-auto p-5 underline underline-offset-4 font-medium block hover:text-[#0198FE] duration-200" to="/blog">
-                  Read more
-                </Link>
+                <div className="p-5">
+                  <h3 className="text-[28px] font-bold leading-7">Regional Manager & Limited time management.</h3>
+                  <p className="text-justify mb-4">{totalChar > 306 ? desc.slice(0, 306).replace(/\s+$/, "") + "..." : desc}</p>
+                  <Link className="mt-auto p-5 underline underline-offset-4 font-medium block hover:text-[#0198FE] duration-200" to="/blog">
+                    Read more
+                  </Link>
+                </div>
               </div>
             </article>
           ))}
