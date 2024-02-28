@@ -10,7 +10,7 @@ const Portfolio = () => {
   const [activeButton, setActiveButton] = useState("next");
 
   return (
-    <section className="pb-[80px]">
+    <section className="pb-[130px]">
       <div className="max-w-[1350px] px-10 lg:px-[110px] 2xl:px-0 mx-auto">
         <div className="mb-20 flex">
           <h1 className="text-4xl font-bold w-full">

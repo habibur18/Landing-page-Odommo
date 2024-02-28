@@ -9,7 +9,7 @@ const AboutUs = () => {
   return (
     <div className="mt-20">
       <PageTitle title="About Us" src="https://i.postimg.cc/Y9T9bzgX/contactus.png" />
-      <section className="max-w-[1350px] px-10 lg:px-[100px] 2xl:px-0 mx-auto">
+      <section className="max-w-[1350px] px-10 lg:px-[100px] 2xl:px-0 mx-auto mb-[80px]">
         <SectionWithImage
           title="Our Story"
           description="Hello, and welcome to Odommo, your partner in digital success! Established in February 2020, our story is one of growth, collaboration, and a relentless pursuit of excellence. As a team, we've weathered the evolving landscape of digital services, emerging stronger with each challenge.
@@ -40,10 +40,14 @@ const AboutUs = () => {
         />
       </section>
       <section>
-        <ServiceHighlightsSection />
-        <ServiceTile title="Our Best Services" button={true} />
-        <div className="mt-[99px]"></div>
+        <div className="mb-[80px] border">
+          <ServiceHighlightsSection />
+        </div>
+        <div className="mb-[80px] pt-[40px]">
+          <ServiceTile title="Our Best Services" button={true} />
+        </div>
         <TeamMember />
+        <div className="mt-[80px]"></div>
         <PartnerWithUs />
       </section>
     </div>
