@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function RecentBlog() {
   const description = "With overa decade experience,we’ve established ourselves as one of the pioneering agencies in the region With overa decade experience,we’ve established ourselves as one of the pioneering agencies in the region..";
   return (
-    <section className="my-20">
+    <section className="">
       <div className="max-w-[1350px] px-10 lg:px-[100px] 2xl:px-0 mx-auto">
         <h1 className="text-4xl font-bold text-center my-[46px] capitalize">Our recent blogs</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 [&>div]:sm:max-w-[410px]">

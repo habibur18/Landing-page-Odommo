@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function PartnerWithUs() {
   return (
-    <section className="mt-[158px] mb-[122px]">
+    <section className="">
       <div className="max-w-[1350px] px-10 2xl:px-0 py-20 mx-auto  bg-[#F5F5F5] rounded-md">
         <div className="space-y-5 flex justify-center flex-col items-center">
           <h1 className="text-4xl font-bold">Partner with us</h1>

@@ -3,7 +3,7 @@ import React from "react";
 export default function ServiceHighlightsSection() {
   return (
     <section>
-      <div className="max-w-[1350px] mt-[88px] mb-[142px] px-10 lg:px-[92px] 2xl:px-0 mx-auto">
+      <div className="max-w-[1350px] px-10 lg:px-[92px] 2xl:px-0 mx-auto">
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-24">
           <div className="w-3/4">
             <h2 className=" lg:max-w-[12ch] text-4xl font-bold ">
@@ -14,7 +14,7 @@ export default function ServiceHighlightsSection() {
             <p>Discover the difference with IT Web Logic. Experience our data-driven decisions and proven track record of success. Choose us for uniquely crafted web solutions.</p>
           </div>
         </div>
-        <div className="flex flex-col-reverse items-center lg:flex-row  gap-14 2xl:gap-20 my-10 ">
+        <div className="flex flex-col-reverse items-center lg:flex-row  gap-14 2xl:gap-20 mt-10 ">
           <div>
             <div>
               <img className="w-full" src="https://i.ibb.co/Tg9mgLM/main.png" alt="" />

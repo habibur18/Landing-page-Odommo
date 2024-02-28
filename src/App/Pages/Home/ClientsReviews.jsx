@@ -29,9 +29,9 @@ export default function ClientsReviews() {
     return () => window.removeEventListener("resize", handleResize); // Cleanup the event listener
   }, []); // No need to include slideCount and setSlideCount in the dependency array
   return (
-    <section className="mt-[119px]">
+    <section className="">
       <div className="max-w-[1350px] px-10 lg:px-[80px] 2xl:px-0 mx-auto overflow-hidden">
-        <h1 className="text-4xl font-bold text-center my-10">What People Are Saying</h1>
+        <h1 className="text-4xl font-bold text-center mb-10">What People Are Saying</h1>
 
         <div>
           <Swiper
@@ -53,7 +53,7 @@ export default function ClientsReviews() {
             }}
             modules={[Pagination, Autoplay, Navigation]}
             className="mySwiper"
-            style={{ overflow: "hidden", minHeight: "450px", width: "100%", margin: "0 auto" }}
+            style={{ overflow: "visible", minHeight: "550px", width: "100%", margin: "0 auto" }}
           >
             {Array.from({ length: 4 }).map((_, index) => (
               <SwiperSlide key={index}>

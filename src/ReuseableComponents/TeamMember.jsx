@@ -10,15 +10,15 @@ import "swiper/css/pagination";
 import { Navigation } from "swiper/modules";
 
 export default function TeamMember() {
-  const [activeButton, setActiveButton] = useState("");
+  const [activeButton, setActiveButton] = useState("next");
   return (
-    <section className="bg-[#F5F5F5] py-24">
+    <section className="bg-[#F5F5F5] py-24 mt-28">
       <div className="max-w-[1350px] px-10 lg:px-[110px] 2xl:px-0 mx-auto">
         <div className="text-4xl mb-20 font-bold text-center">
           <h1>Our Team Member</h1>
         </div>
         <div className="relative">
-          <Swiper cssMode={true} navigation={{ nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" }} modules={[Navigation]} className="mySwiper" style={{ overflow: "visible" }}>
+          <Swiper cssMode={true} loop={true} navigation={{ nextEl: ".swiper-team-button-next", prevEl: ".swiper-team-button-prev" }} modules={[Navigation]} className="mySwiper" style={{ overflow: "visible" }}>
             {Array.from({ length: 4 }).map((_, index) => (
               <SwiperSlide key={index}>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-10 gap-y-16">
@@ -90,12 +90,12 @@ export default function TeamMember() {
               </SwiperSlide>
             ))}
           </Swiper>
-          <div style={{ zIndex: 100 }} className="absolute -top-10 right-28">
-            <button style={{ color: activeButton === "next" ? "#FFFFFF" : "#3B82F6", backgroundColor: activeButton === "next" ? "#0198FE" : "#FFFFFF" }} className="swiper-button-next px-8 py-5" onClick={() => setActiveButton("next")}>
-              <i className="fa-solid fa-arrow-left flex border h-full w-full justify-center items-center"></i>
+          <div style={{ zIndex: 100 }} className="absolute -top-20 right-24">
+            <button style={{ color: activeButton === "prev" ? "#FFFFFF" : "#0198FE", backgroundColor: activeButton === "prev" ? "#0198FE" : "#FFFFFF" }} className="swiper-team-button-prev px-8 py-5" onClick={() => setActiveButton("prev")}>
+              <i className="fa-solid fa-arrow-left flex h-full w-full justify-center items-center"></i>
             </button>
-            <button style={{ color: activeButton === "prev" ? "#FFFFFF" : "#0198FE", backgroundColor: activeButton === "prev" ? "#0198FE" : "#FFFFFF" }} className="swiper-button-prev px-8 py-5" onClick={() => setActiveButton("prev")}>
-              <i className="fa-solid fa-arrow-right flex border h-full w-full justify-center items-center"></i>
+            <button style={{ color: activeButton === "next" ? "#FFFFFF" : "#3B82F6", backgroundColor: activeButton === "next" ? "#0198FE" : "#FFFFFF" }} className="swiper-team-button-next px-8 py-5 ml-7" onClick={() => setActiveButton("next")}>
+              <i className="fa-solid fa-arrow-right flex h-full w-full justify-center items-center"></i>
             </button>
           </div>
         </div>

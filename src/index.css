@@ -15,8 +15,8 @@ body {
 }
 
 .swiper-pagination-bullet-active {
-  width: 16px !important;
-  height: 16px !important;
+  width: 26px !important;
+  height: 26px !important;
 }
 .swiper-pagination {
   display: flex;

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function BussinessSection() {
   return (
     <section>
-      <div className="max-w-[1350px] mt-[30px] py-[92px] px-10 lg:px-[98px] 2xl:px-0 mx-auto flex flex-col md:flex-row justify-between items-center gap-12 lg:gap-24">
+      <div className="max-w-[1350px]   px-10 lg:px-[98px] 2xl:px-0 mx-auto flex flex-col md:flex-row justify-between items-center gap-12 lg:gap-24">
         <div className="space-y-10 my-10 md:my-0 md:w-5/6">
           <motion.h1 initial={{ x: -100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ delay: 0.2, type: "spring", stiffness: 60, ease: "easeIn", duration: 1 }} className="text-4xl font-bold">
             Business & IT Solutions In Bangladesh

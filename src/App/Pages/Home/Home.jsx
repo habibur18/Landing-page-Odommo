@@ -13,7 +13,7 @@ import SearchDomain from "./SearchDomain";
 
 export default function Home() {
   return (
-    <div>
+    <div className="space-y-[80px]">
       <HeroSection />
       <BussinessSection />
       <ServiceTile title="Our Best Services" button={true} />
