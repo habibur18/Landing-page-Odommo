@@ -19,7 +19,7 @@ const Blog = () => {
           {Array.from({ length: 6 }).map((_, index) => (
             <article key={index} className="space-y-5 max-w-[624px] mx-auto bg-[#DADBDD7A]/[0.48]  rounded-md">
               <figure>
-                <img src="https://i.ibb.co/nkWp8gZ/Image.png" className="rounded-lg w-full border-2 border-red-300" alt="" />
+                <img src="https://i.ibb.co/nkWp8gZ/Image.png" className="rounded-lg w-full" alt="" />
               </figure>
               <div>
                 <div className="flex justify-between text-sm my-2 px-5">
