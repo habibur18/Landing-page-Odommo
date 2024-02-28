@@ -17,14 +17,18 @@ const Blog = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5 md:gap-16 md:gap-y-20">
           {Array.from({ length: 6 }).map((_, index) => (
-            <article key={index} className="space-y-5 max-w-[624px] mx-auto">
+            <article key={index} className="space-y-5 max-w-[624px] mx-auto bg-[#DADBDD7A]/[0.48] p-5 rounded-md">
               <figure>
                 <img src="https://i.ibb.co/nkWp8gZ/Image.png" className="rounded-lg" alt="" />
               </figure>
+              <div className="flex justify-between text-sm my-2">
+                <p>02 January 2024</p>
+                <p>2 COMMENTS</p>
+              </div>
               <h3 className="text-[28px] font-bold leading-7">Regional Manager & Limited time management.</h3>
               <p className="text-justify">{totalChar > 306 ? desc.slice(0, 306).replace(/\s+$/, "") + "..." : desc}</p>
-              <Link className="block bg-[#0198FE] hover:bg-white hover:text-[#0198FE] hover:ring-2 hover:ring-[#0198FE] duration-300 text-white px-3 py-3 sm:px-5 sm:py-2 rounded-[36px] max-w-[176px] text-center mt-8" onClick={() => window.scrollTo(0, 0)} to={`/blogDetails`}>
-                Read More
+              <Link className="mt-auto p-5 underline underline-offset-4 font-medium block hover:text-[#0198FE] duration-200" to="/blog">
+                Read more
               </Link>
             </article>
           ))}

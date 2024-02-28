@@ -17,11 +17,13 @@ const Services = () => {
           </div>
         </div>
 
-        <section className="space-y-20">
+        <section className="space-y-[80px]">
           <ServiceTile />
           <ServiceHighlightsSection />
           <TeamMember />
-          <PartnerWithUs />
+          <div className="mt-[80px] pb-[40px]">
+            <PartnerWithUs />
+          </div>
         </section>
       </main>
     </div>
